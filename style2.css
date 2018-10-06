@@ -1,0 +1,28 @@
+body{
+    padding:10%;
+}
+
+#contacterreur {
+    padding:2%;
+    text-align: center;
+    font-size: 1.5em;
+    border: 2px solid grey;
+    width:100%;
+}
+
+#contactmessage {
+    padding:2%;
+    text-align: center;
+    font-size: 1.5em;
+    border: 2px solid grey;
+    width:100%;
+}
+
+
+
+/*Ecran tablette */
+@media screen and (min-width: 0px) and (max-width: 768px){
+
+
+
+}

@@ -1,0 +1,579 @@
+html {
+    scroll-behavior: smooth;
+}
+
+*{
+   margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   font-family: 'Montserrat', sans-serif;
+}
+
+body {
+	background-color: #F2F2F2;
+	margin: 0;
+    /*scroll-behavior: smooth;
+  overflow-y: scroll;*/
+}
+
+a:link { 
+    text-decoration:none; 
+    color: grey;
+} 
+/*
+a:visited {
+    color: grey;
+}
+*/
+
+/* ///// BOUTONS ///// */
+
+.btn {
+	cursor: pointer;
+	text-align:center;
+	font-weight: bolder;
+}
+
+
+/* ////// Gros titres ///// */
+.titre {
+    letter-spacing: 5px;
+    line-height: 4em;
+    font-size: 2.5em;
+    color: #394259;
+    text-align: center;
+}
+
+  
+
+
+
+
+/* ////////// HEADER ////////// */
+
+
+.header-logo {
+    position:absolute;
+    top: -25px;
+    left: 50px;
+}
+
+.header-menu {
+    position:fixed;
+    z-index:9999;
+    top:0;   
+    margin: 0;
+    text-align: center;
+    width:100%;
+    background-color:white;
+}
+
+.header-menu a {
+    text-decoration: none;
+    padding: 1em;
+    letter-spacing: 2px;
+    font-size: 1rem;
+    text-transform: uppercase;
+    list-style-type: none;
+    display: inline-block;
+}
+
+
+.header-menu a:hover{
+    /*background-color: rgb(46, 164, 191, 0.3);*/
+    background-color: rgb(255, 147, 30, 0.3);
+    color: white;
+    transition-duration: 1.5s;
+}
+
+.header-menu a.active {
+    background-color: #2EA4BF;
+    color: white;
+}
+
+
+.menu-deroulant {
+     display: none;
+}
+
+/* ////// A PROPOS ////// */
+
+#accueil {
+    position:relative;
+}
+
+
+
+.bouton_bannere {
+    border-radius: 5px;
+    padding: 10px;
+    /* background: linear-gradient(60deg, #2988D6, #2EA4BF); */
+    color: #FF931E;
+    position: absolute;
+    background-color: white;
+    width: 200px;
+    text-align: center;
+    height: 60px;
+    line-height: 40px;
+    font-size: 16px;
+}
+
+#boutongauche {
+    left: 15%;
+    top: 82%; 
+}
+
+#boutondroite {
+    right: 15%;
+    top: 82%; 
+}
+
+#boutongauche:hover, #boutondroite:hover {
+    background-color: #FF931E;
+    color: white;
+}
+
+.typewrite {
+    position: absolute;
+    top: 30%;
+    left: 5%;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+
+
+/* /////  PORTFOLIO   ///// */
+
+
+#cadre {
+    box-shadow: 0 0 30px #d9d9d9;	
+}
+
+
+/* ////// Barre de trie ////// */
+
+#categories_nav  {
+    cursor: pointer;
+    text-align:center;
+    margin-bottom: 10px;
+}
+
+#categories_nav a {
+    text-decoration: none;
+    padding: 1em;
+    letter-spacing: 2px;
+    font-size: 1rem;
+    text-transform: uppercase;
+    list-style-type: none;
+    display: inline-block;
+    color: #394259;
+}
+
+#categories_nav a.active {
+    background-color: rgb(46, 164, 191, 0.5);
+    color: white;
+}
+
+#categories_nav a:hover{
+    background-color: rgb(46, 164, 191, 0.5);
+   /* background-color: rgb(255, 147, 30, 0.3);*/
+    color: white;
+    transition-duration: 1.5s;
+}
+
+/* ///// Articles grille ///// */
+
+#articles {
+	height: auto;
+	display: grid;
+	grid-template-columns: auto auto auto auto;
+	/*grid-template-rows: auto auto auto auto;
+	grid-auto-rows: minmax(250px, auto);*/
+	padding: 15px;
+	grid-gap: 15px;
+	
+}
+
+
+.portfolio {
+    display: block;
+    position: relative;
+}
+
+.portfolio_info {
+    display:none;
+    position: absolute;
+    /*top: 0;*/
+    right: 0;
+    bottom: 25px;
+    left: 0;
+    font-size:24px;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    text-align:center;
+    color: red;
+}
+
+.portfolio img {
+    width: 100%;
+    height: auto;
+}
+
+.portfolio_info p {
+	opacity: 1;
+	text-transform: uppercase;
+}
+
+.portfolio_info .categories {
+    font-size: 16px;
+    color: #FF931E;
+    opacity: 1;
+}
+
+/* ///// COMPETENCES ///// */ 
+
+#listecomp {
+	text-align:center;
+	padding:20px;
+}
+
+#listecomp h3 {
+    color: #2EA4BF;
+}
+
+.progressbar {
+    background-color: #394259;
+    border-radius: 20px; /* (heightOfInnerDiv / 2) + padding */
+    padding: 4px;
+    margin:10px;
+    width: 30%;
+    display: inline-block;
+    color:white;
+    text-align: center;
+
+}
+
+.progressbar > div {
+    background-color: #FF931E;
+    width: 48%; /* Adjust with JavaScript */
+    height: 20px;
+    border-radius: 10px;
+    position:relative;
+}
+
+.progressbar h4 {
+    position:absolute;
+    left:50%;
+}
+
+.progressbar #ph {
+    width: 76%; 
+}
+.progressbar #il {
+    width: 55%; 
+}
+.progressbar #au {
+    width: 75%; 
+}
+.progressbar #pp {
+    width: 65%; 
+}
+
+
+#linkedin {
+	text-align:center;
+	text-decoration: none;	
+}
+
+
+
+/* BANNIERE PROFIL */
+
+#banniereapropos {
+    height: 50em ;
+    background-image: url("img/encore221.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 60%;
+    position:relative;
+    filter: brightness(0.2);
+
+}
+
+
+#apropos p {
+	width: 26em;
+    /* height: 14em; */
+    padding: 20px;
+    font-size: 1.2em;
+    left: 57em;
+    top: 19em;
+    box-shadow: 0 0 30px #14141f;
+    border-radius: 12px;
+    background-color: rgba(224, 224, 235, 0.5);
+    /*position: absolute;*/
+    word-wrap: break-word;
+    line-height: 1.5em;
+}
+
+
+
+
+
+#barreprogresscontact{
+	width: 30%;
+	height: 10px;
+	border-radius: 15px;
+	background-color: black;
+	margin-left:35%;
+}
+
+#barreprogresscontact:before{
+	width: 25%;
+	position:absolute;
+	height: 10px;
+	border-radius: 15px;
+	background-color: green;
+	content: '';
+    display: block;
+
+}
+
+
+/* CONTACT */
+
+
+/* FORMULAIRE */
+#formcontact  {
+	display:block;
+	text-align:center;
+    padding: 2em;
+}
+
+form textarea {
+    font-weight: bolder;
+    padding-left:5px;
+    margin-top:1%;
+    width:51%;
+}
+
+.form_info {
+  	width: 15em;
+    height: 5em;
+    font-weight: bolder;
+    padding-left:5px;
+}
+
+#envoyer {
+    width:15em;
+    height:5em;
+}
+/* FOOTER */
+
+#footer {
+	/*background-color: #D8D8D8;*/
+	background-color: #394259;
+	color: white;
+	height: 100px;
+	padding:10px;
+	position: relative;
+	text-align: center;
+}
+
+
+
+/* /////////// MODAL /////////// */
+
+
+/* The modal's background */
+.modal {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Display the modal when targeted */
+.modal:target {
+    display: table;
+    position: fixed;
+    z-index: 99999999999999999;
+}
+
+/* The modal box */
+.modal-dialog {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+/* The modal's content */
+.modal-dialog .modal-content {
+  margin: auto;
+  background-color: #f3f3f3;
+  position: relative;
+  padding: 0;
+  outline: 0;
+  border: 1px #777 solid;
+  text-align: justify;
+  width: 80%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+  /* Add animation */
+  -webkit-animation-name: example; /* Chrome, Safari, Opera */
+  -webkit-animation-duration: 0.5s; /* Chrome, Safari, Opera */
+  animation-name: example;
+  animation-duration: 0.5s;
+}
+
+/* The button used to close the modal */
+.closebtn {
+  text-decoration: none;
+  float: right;
+  font-size: 35px;
+  font-weight: bold;
+  color: #394259;
+}
+
+.closebtn:hover,
+.closebtn:focus {
+  color: #FF931E;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.container {
+  padding: 2px 16px;
+  word-wrap: break-word;
+}
+
+.headermodal {
+  background-color: #2EA4BF;
+  font-size: 20px;
+  color: white;
+}
+
+.footermodal {
+    background-color: #2EA4BF;
+    font-size: 14px;
+    color: white;
+    text-align: left;
+}
+
+
+
+
+
+
+
+
+
+
+/*Ecran tablette */
+@media screen and (min-width: 0px) and (max-width: 768px){
+
+
+
+    .titre {
+        letter-spacing: 5px;
+        line-height: 2em;
+        font-size: 1em;
+        color: #394259;
+        text-align: center;
+    }
+
+
+/* ///////// MENU NAV //////////// */
+
+    .header {
+        position:relative;
+    }
+
+    .header-logo {
+        position: absolute;
+        top: -25px;
+        left: 0px;
+    }
+
+    
+    .menu-deroulant{
+        display:block;
+    }
+    .menu-fermer {
+        display:none;
+    }
+    #menu-nav a {
+        border-top:1px solid black;
+        display: block;
+    }
+
+    #menu-nav {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 1.6s ease;
+    }
+
+    #main-header:target .menu-fermer{
+        display:inline;
+    }
+
+    #main-header:target .menu-ouvert{
+        display:none;
+    }
+
+    #main-header:target #menu-nav {
+        max-height: 1000px;
+    }
+
+
+
+
+
+
+/* ///////////// BANNIERE ////////////// */
+
+    #boutondroite {
+        top: 85%;
+        right: 80px;
+    }
+
+    #boutongauche {
+        left: 80px;
+        top: 75%;
+    }
+
+
+
+/* ////////// CONTACT /////////// */
+
+    .form_info {
+        width: 100%;
+        height: 5em;
+        font-weight: bolder;
+        padding-left: 5px;
+        margin-bottom: 15px;
+    }
+
+    form textarea {
+        font-weight: bolder;
+        padding-left: 5px;
+        margin-bottom: 15px;
+        width: 100%;
+    }
+
+
+
+
+
+}
+
+
+
