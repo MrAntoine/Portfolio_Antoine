@@ -64,6 +64,37 @@ EOT;
 			// Redirection
             header ('Location:/#contact');
 
+            $modal = ?>
+              "<div id="projet01" class="modal">
+  						<div class="modal-dialog">
+   	 						<div class="modal-content">
+   	 							<div class="headermodal">
+     	 							<div class="container"> 
+        								<a href="#portfolio" class="closebtn">×</a>
+        								<h2>Cosmopolitan</h2>
+      								</div>
+      							</div>
+      							<div class="container">
+        							<p>Votre message a été envoyé. Merci de m'avoir contacté.</p>
+      							</div>
+      							<div class ="footermodal">
+      								<div class="container">
+        								<p>Web</p>
+      								</div>
+      							</div>
+    						</div>
+  						</div>
+					</div>"
+				<?php
+				;
+				
+
+            echo $modal;
+
+
+
+
+
         }
     } else {
         echo 'Votre adresse e-mail est invalide. Le message n\'a pas été envoyé.';
