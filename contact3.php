@@ -49,6 +49,9 @@ EOT;
             $msg = 'Désolé, quelque chose a mal tourné. Veuillez réessayer plus tard.';
         } else {
             $msg = 'Le message a été envoyé. Merci de m\'avoir contacté !';
+            header ('Location:/#contact');
+            echo '<div class="contactmessage"> <p>'.$msg_ok.'Vous allez être rediriger automatiquement. Sinon retournez sur le site en <a href='.$urlformulaire.'>cliquant ici</a></p></div>'."\n";
+
         }
     } else {
         $msg = 'Votre adresse e-mail est invalide. Le message n\'a pas été envoyé.';
@@ -65,7 +68,6 @@ if (!empty($msg)) {
 $msg_erreur = "Erreur dans le formulaire. Tout les champs ne sont pas remplit ou érronés.<br/><br/>";
 $msg_ok = "Votre demande a bien été prise en compte.";
 $message = $msg_erreur;
-$destinataire = 'antoinevdblycee@gmail.com';
 $erreurs=0;
 $urlformulaire='"/#contact"';
 
@@ -134,9 +136,9 @@ if( isset($_POST['email']) && isset($_POST['nom']) && isset($_POST['prenom']) &&
 			$_POST['message'] = "";
 			$_POST['envoi'] = "";
 
-			header ('Location:/#contact'); 
+			 
 
-			$affichage = "message_envoye";
+
 
  			
 		}
@@ -164,9 +166,7 @@ switch ($affichage){
 		echo "<div id=\"contacterreur\">Vous n'avez pas envoyé le formulaire. Ou celui-ci est mal rempli. <br/> <br/> <a href=" . $urlformulaire . ">Retourner sur le site</a> <div>";
 		break;
 
-	case "message_envoye":
-		echo '<div class="contactmessage"> <p>'.$msg_ok.'Vous allez être rediriger automatiquement. Sinon retournez sur le site en <a href='.$urlformulaire.'>cliquant ici</a></p></div>'."\n";
-		break;
+
 
 	case "message_vide":
 		echo '<div class="contactmessage"><p>'.$msg_erreur.' <a href='.$urlformulaire.'>Retour au formulaire</a></p>'."\n</div>";
