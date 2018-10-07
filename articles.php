@@ -138,3 +138,19 @@
               </div>
           </div>
 
+
+
+
+
+  <div id="messagesucces" class="modal">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="container"> 
+                        <a href="#contact" class="closebtn">×</a>
+                      </div>
+                    <div class="container">
+                      <p>Votre message a été envoyé. Merci de m'avoir contacté.</p>
+                    </div>
+                </div>
+              </div>
+          </div>
