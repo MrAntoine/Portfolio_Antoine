@@ -145,9 +145,12 @@
   <div id="messagesucces" class="modal">
               <div class="modal-dialog">
                 <div class="modal-content">
+                  <div class="headermodal">
                     <div class="container"> 
                         <a href="#contact" class="closebtn">×</a>
+                        <h2>Message envoyé</h2>
                       </div>
+                  </div>
                     <div class="container">
                       <p>Votre message a été envoyé. Merci de m'avoir contacté.</p>
                     </div>
