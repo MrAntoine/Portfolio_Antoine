@@ -18,6 +18,7 @@ function Rec($text)
 
 
 //////////////////////////////////////
+$urlformulaire='"/#contact"';
 
 
 use PHPMailer\PHPMailer\PHPMailer;
@@ -48,7 +49,6 @@ EOT;
         if (!$mail->send()) {
             $msg = 'Désolé, quelque chose a mal tourné. Veuillez réessayer plus tard.';
         } else {
-            $msg = 'Le message a été envoyé. Merci de m\'avoir contacté !';
             header ('Location:/#contact');
             echo '<div class="contactmessage"> <p>'.$msg_ok.'Vous allez être rediriger automatiquement. Sinon retournez sur le site en <a href='.$urlformulaire.'>cliquant ici</a></p></div>'."\n";
 
@@ -57,10 +57,11 @@ EOT;
         $msg = 'Votre adresse e-mail est invalide. Le message n\'a pas été envoyé.';
     }
 
-
+/*
 if (!empty($msg)) {
     echo "<h2>$msg</h2>";
 }
+*/
 
 ///////////// CODE  /////////////////
 
@@ -69,15 +70,13 @@ $msg_erreur = "Erreur dans le formulaire. Tout les champs ne sont pas remplit ou
 $msg_ok = "Votre demande a bien été prise en compte.";
 $message = $msg_erreur;
 $erreurs=0;
-$urlformulaire='"/#contact"';
 
 
 //  Message non transmit par le formulaire
 if (!isset($_POST['envoi'])){
 	$affichage = "erreur_formulaire";
 	$delai=5; 
-	$url='/#contact';
-	header("Refresh: $delai;url=$url");
+	header("Refresh: $delai;url=$urlformulaire");
 }
 
 
