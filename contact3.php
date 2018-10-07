@@ -22,7 +22,7 @@ $urlformulaire='"/#contact"';
 
 
 use PHPMailer\PHPMailer\PHPMailer;
-require '../vendor/autoload.php';
+require 'vendor/autoload.php';
     $mail = new PHPMailer;
     $mail->isSMTP();
     $mail->Host = 'mx1.hostinger.com';
@@ -31,14 +31,11 @@ require '../vendor/autoload.php';
     $mail->Username = 'contact@antoinevanderbrecht.fr';
     $mail->Password = 'IN6Mrra7IWxP';
     $mail->setFrom('contact@antoinevanderbrecht.fr', 'Antoine Vanderbrecht');
-
-
     $mail->addAddress('contact@antoinevanderbrecht.fr', 'Antoine test');
+   
 
     if ($mail->addReplyTo($_POST['email'], $_POST['nom'], $_POST['prenom'])) {
-
         $mail->Subject = 'Formulaire de contact Antoine Vanderbrecht';
-
         $mail->isHTML(false);
         $mail->Body = <<<EOT
 Email: {$_POST['email']}
@@ -46,22 +43,32 @@ Nom: {$_POST['nom']}
 Prénom : {$_POST['prenom']}
 Message: {$_POST['message']}
 EOT;
+
+
+
         if (!$mail->send()) {
-            $msg = 'Désolé, quelque chose a mal tourné. Veuillez réessayer plus tard.';
+            echo 'Désolé, quelque chose a mal tourné. Veuillez réessayer plus tard.';
         } else {
-            header ('Location:/#contact');
+            // Message 
             echo '<div class="contactmessage"> <p>'.$msg_ok.'Vous allez être rediriger automatiquement. Sinon retournez sur le site en <a href='.$urlformulaire.'>cliquant ici</a></p></div>'."\n";
+
+            // Reset des champs 
+            $_POST['nom'] = "";
+			$_POST['prenom'] = "";
+			$_POST['sujet'] = "";
+			$_POST['email'] = "";
+			/*$_POST['captcha'] = "";*/
+			$_POST['message'] = "";
+			$_POST['envoi'] = "";
+
+			// Redirection
+            header ('Location:/#contact');
 
         }
     } else {
-        $msg = 'Votre adresse e-mail est invalide. Le message n\'a pas été envoyé.';
+        echo 'Votre adresse e-mail est invalide. Le message n\'a pas été envoyé.';
     }
 
-/*
-if (!empty($msg)) {
-    echo "<h2>$msg</h2>";
-}
-*/
 
 ///////////// CODE  /////////////////
 
@@ -74,7 +81,7 @@ $erreurs=0;
 
 //  Message non transmit par le formulaire
 if (!isset($_POST['envoi'])){
-	$affichage = "erreur_formulaire";
+	echo "<div id=\"contacterreur\">Vous n'avez pas envoyé le formulaire. Ou celui-ci est mal rempli. <br/> <br/> <a href=" . $urlformulaire . ">Retourner sur le site</a> <div>";
 	$delai=5; 
 	header("Refresh: $delai;url=$urlformulaire");
 }
@@ -127,57 +134,22 @@ if( isset($_POST['email']) && isset($_POST['nom']) && isset($_POST['prenom']) &&
 			
 			mail($destinataire, $sujet, $message, $headers);
 
-			$_POST['nom'] = "";
-			$_POST['prenom'] = "";
-			$_POST['sujet'] = "";
-			$_POST['email'] = "";
-			/*$_POST['captcha'] = "";*/
-			$_POST['message'] = "";
-			$_POST['envoi'] = "";
-
-			 
-
-
-
  			
 		}
 		else
 		{
 			// une des 3 variables (ou plus) est vide ...
-			$affichage = "message_vide";
+			echo '<div class="contactmessage"><p>'.$msg_erreur.' <a href='.$urlformulaire.'>Retour au formulaire</a></p>'."\n</div>";
 		}
 
 
 	}else {
-		$affichage = "erreur_formulaire_2";
+		echo '<div class="contacterreur">'.$msg_erreur.' <a href='.$urlformulaire.'>Retour au formulaire</a>'."\n <br/> <br/> Si vous aviez écrit un long message le voici pour vous éviter de le recopier:<br/> <textarea cols=\"60\" rows=\"10\" >". $_POST['message']. "</textarea></div>";
 	}
 
 }
 
 /////////////////////////////////////////////
-
-
-//////////// AFFICHAGES /////////////////////
-
-switch ($affichage){
-
-	case "erreur_formulaire":
-		echo "<div id=\"contacterreur\">Vous n'avez pas envoyé le formulaire. Ou celui-ci est mal rempli. <br/> <br/> <a href=" . $urlformulaire . ">Retourner sur le site</a> <div>";
-		break;
-
-
-
-	case "message_vide":
-		echo '<div class="contactmessage"><p>'.$msg_erreur.' <a href='.$urlformulaire.'>Retour au formulaire</a></p>'."\n</div>";
-		break;
-
-	case "erreur_formulaire_2":
-		echo '<div class="contacterreur">'.$msg_erreur.' <a href='.$urlformulaire.'>Retour au formulaire</a>'."\n <br/> <br/> Si vous aviez écrit un long message le voici pour vous éviter de le recopier:<br/> <textarea cols=\"60\" rows=\"10\" >". $_POST['message']. "</textarea></div>";
-		break;
-
-}
-
-////////////////////////////////////////////
 
 ?>
 
