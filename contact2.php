@@ -1,4 +1,4 @@
-<?php/*
+<?php
 use PHPMailer\PHPMailer\PHPMailer;
 require '../vendor/autoload.php';
     $mail = new PHPMailer;
@@ -7,9 +7,9 @@ require '../vendor/autoload.php';
     $mail->Port = 587;
     $mail->SMTPAuth = true;
     $mail->Username = 'contact@antoinevanderbrecht.fr';
-    $mail->Password = 'EMAIL_ACCOUNT_PASSWORD';
+    $mail->Password = 'IN6Mrra7IWxP';
     $mail->setFrom('contact@antoinevanderbrecht.fr', 'Antoine Vanderbrecht');
-    $mail->addAddress('example@gmail.com', 'Receiver Name');
+    $mail->addAddress('contact@antoinevanderbrecht.fr', 'Antoine test');
     if ($mail->addReplyTo($_POST['email'], $_POST['name'])) {
         $mail->Subject = 'PHPMailer contact form';
         $mail->isHTML(false);
@@ -26,7 +26,6 @@ EOT;
     } else {
         $msg = 'Invalid email address, message ignored.';
     }
-    */
 ?>
 
 
@@ -40,9 +39,9 @@ EOT;
 <h1>Let's get in touch!</h1>
 
 
-<?php /*if (!empty($msg)) {
+<?php if (!empty($msg)) {
     echo "<h2>$msg</h2>";
-}*/ ?>
+} ?>
 
 
 <form method="POST">
