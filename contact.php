@@ -1,34 +1,5 @@
 <?php
 
-/*
-session_start(); 
-
-if(!isset($_SESSION['nb_chargements'])){
-	$_SESSION['nb_chargements']=0;
-}else {
-	header ('Location: https://antoinetestiut.000webhostapp.com'); 
-}
-
-
-*/
-
-/*
-if(isset($_SESSION['nb_chargements']) && $_SESSION['nb_chargements'] ==1) { 
-	header ('Location: https://antoinetestiut.000webhostapp.com'); 
-	echo $_SESSION['nb_chargements'];
-} else { 
-	$_SESSION['nb_chargement'] = 1; 
-}
-*/
-
-
-
-
-
-
-
-
-
 
 ///////////// FONCTIONS  /////////////////
 
