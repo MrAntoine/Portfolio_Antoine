@@ -1,4 +1,4 @@
-<?php
+<?php/*
 use PHPMailer\PHPMailer\PHPMailer;
 require '../vendor/autoload.php';
     $mail = new PHPMailer;
@@ -26,6 +26,7 @@ EOT;
     } else {
         $msg = 'Invalid email address, message ignored.';
     }
+    */
 ?>
 
 
@@ -39,9 +40,9 @@ EOT;
 <h1>Let's get in touch!</h1>
 
 
-<?php if (!empty($msg)) {
+<?php /*if (!empty($msg)) {
     echo "<h2>$msg</h2>";
-} ?>
+}*/ ?>
 
 
 <form method="POST">
