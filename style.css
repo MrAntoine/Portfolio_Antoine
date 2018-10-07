@@ -345,7 +345,9 @@ a:visited {
 
 
 /* CONTACT */
-
+#contact {
+    background-image: url(img/image2.jpg);
+}
 
 /* FORMULAIRE */
 #formcontact  {
