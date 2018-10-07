@@ -73,13 +73,12 @@ include 'articles.php';
 					<h3>Photoshop</h3>
 					<div class="progressbar">
    						<div id="ph"><h4>76%</h4></div>
-
 					</div>
 
-					<h3>Illustrator</h3>
-					<div class="progressbar">
-   						<div id="il"><h4>55%</h4></div>
-					</div>
+          <h3>Illustrator</h3>
+          <div class="progressbar">
+              <div id="il"><h4>76%</h4></div>
+          </div>
 
 					<h3>Audition</h3>
 					<div class="progressbar">
@@ -96,6 +95,11 @@ include 'articles.php';
    						<div id=""><h4>75%</h4></div>
 					</div>
 
+          <h3>Git</h3>
+            <h4>J'ai notamment déployé mon site avec GitHub</h4>
+            <div class="progressbar">
+              <div id="il"><h4>55%</h4></div>
+          </div>
 		
     
 
