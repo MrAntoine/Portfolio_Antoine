@@ -62,9 +62,8 @@ EOT;
 			$_POST['envoi'] = "";
 
 			// Redirection
-            header ('Location:/#contact');
+            header ('Location:/#messagesucces');
 
-           
 
 
 
