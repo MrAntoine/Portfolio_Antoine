@@ -246,7 +246,7 @@ include 'articles.php';
 		<div id="contact">
 			<br />
 			<div class="titre"> N'hésitez pas à me contacter &#x1F609 </div>
-			<form method="post" action="contact.php" id="formcontact">
+			<form method="post" action="contact3.php" id="formcontact">
     			<input type="text" name="nom" placeholder="Entrez votre nom" class="form_info" required>
     			<input type="text" name="prenom" placeholder="Entrez votre prénom" class="form_info" required>
    				<input type="email" name="email" placeholder="Entrez votre adresse email" class="form_info" required>
