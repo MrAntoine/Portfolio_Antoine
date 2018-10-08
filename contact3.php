@@ -19,7 +19,7 @@ function Rec($text)
 
 //////////////////////////////////////
 $urlformulaire='"/#contact"';
-
+$erreurs=0;
 
 use PHPMailer\PHPMailer\PHPMailer;
 require 'vendor/autoload.php';
@@ -31,71 +31,15 @@ require 'vendor/autoload.php';
     $mail->Username = 'contact@antoinevanderbrecht.fr';
     $mail->Password = 'IN6Mrra7IWxP';
     $mail->setFrom('contact@antoinevanderbrecht.fr', 'Antoine Vanderbrecht');
+
     $mail->addAddress('contact@antoinevanderbrecht.fr', 'Antoine test');
-   
 
-    if ($mail->addReplyTo($_POST['email'], $_POST['nom'], $_POST['prenom'])) {
-        $mail->Subject = 'Formulaire de contact Antoine Vanderbrecht';
-        $mail->isHTML(false);
-        $mail->Body = <<<EOT
-Email: {$_POST['email']}
-Nom: {$_POST['nom']}
-Prénom : {$_POST['prenom']}
-Message: {$_POST['message']}
-EOT;
-
-
-
-        if (!$mail->send()) {
-            echo 'Désolé, quelque chose a mal tourné. Veuillez réessayer plus tard.';
-        } else {
-            // Message 
-            echo '<div class="contactmessage"> <p>'.$msg_ok.'Vous allez être rediriger automatiquement. Sinon retournez sur le site en <a href='.$urlformulaire.'>cliquant ici</a></p></div>'."\n";
-
-            // Reset des champs 
-            $_POST['nom'] = "";
-			$_POST['prenom'] = "";
-			$_POST['sujet'] = "";
-			$_POST['email'] = "";
-			/*$_POST['captcha'] = "";*/
-			$_POST['message'] = "";
-			$_POST['envoi'] = "";
-
-			// Redirection
-            header ('Location:/#messagesucces');
-
-
-
-
-
-
-        }
-    } else {
-        echo 'Votre adresse e-mail est invalide. Le message n\'a pas été envoyé.';
-    }
-
-
-///////////// CODE  /////////////////
-
-
-$msg_erreur = "Erreur dans le formulaire. Tout les champs ne sont pas remplit ou érronés.<br/><br/>";
-$msg_ok = "Votre demande a bien été prise en compte.";
-$message = $msg_erreur;
-$erreurs=0;
-
-
-//  Message non transmit par le formulaire
-if (!isset($_POST['envoi'])){
-	echo "<div id=\"contacterreur\">Vous n'avez pas envoyé le formulaire. Ou celui-ci est mal rempli. <br/> <br/> <a href=" . $urlformulaire . ">Retourner sur le site</a> <div>";
-	$delai=5; 
-	header("Refresh: $delai;url=$urlformulaire");
-}
 
 
 // Si tous les champs sont remplis
-if( isset($_POST['email']) && isset($_POST['nom']) && isset($_POST['prenom']) && isset($_POST['sujet']) && isset($_POST['message']) /*&& isset($_POST['captcha'])*/ ){
- 
- 	// On vérifie que le champ email est bien un email:
+if( isset($_POST['email']) && isset($_POST['nom']) && isset($_POST['prenom']) && isset($_POST['sujet']) && isset($_POST['message']) ){
+
+// On vérifie que le champ email est bien un email:
 	$regex = '/^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})$/'; 
 		if (!preg_match($regex, $_POST['email'])){
 			$erreurs = $erreurs +1;
@@ -103,12 +47,7 @@ if( isset($_POST['email']) && isset($_POST['nom']) && isset($_POST['prenom']) &&
 			$email = $_POST['email'];
 		}
 
-	/*// Si le captcha est différent de 4
-	if($_POST['captcha'] != 4){
-		$erreurs = $erreurs +1;
-	}*/
-
-	// Si il n'y a aucune erreur
+// Si il n'y a aucune erreur
 	if($erreurs == 0){
 
 		$nom     = (isset($_POST['nom']))     ? Rec($_POST['nom'])     : '';
@@ -121,12 +60,7 @@ if( isset($_POST['email']) && isset($_POST['nom']) && isset($_POST['prenom']) &&
 		// Si les chemps ne sont pas vide
 		if (($nom != '') && ($prenom != '') && ($email != '') && ($sujet != '') && ($message != '')){
 
-				// les 4 variables sont remplies, on génère puis envoie le mail
-				$headers  = 'MIME-Version: 1.0' . "\r\n";
-				$headers .= 'De:'.$nom.$prenom.' <'.$email.'>' . "\r\n" .
-						'Répondre à:'.$email. "\r\n";
-
-			// Remplacement de certains caractères spéciaux
+		// Remplacement de certains caractères spéciaux
 			$message = str_replace("&#039;","'",$message);
 			$message = str_replace("&#8217;","'",$message);
 			$message = str_replace("&quot;",'"',$message);
@@ -136,16 +70,76 @@ if( isset($_POST['email']) && isset($_POST['nom']) && isset($_POST['prenom']) &&
 			$message = str_replace("&gt;",">",$message);
 			$message = str_replace("&amp;","&",$message);
 
-			
-			mail($destinataire, $sujet, $message, $headers);
 
- 			
-		}
-		else
-		{
-			// une des 3 variables (ou plus) est vide ...
-			echo '<div class="contactmessage"><p>'.$msg_erreur.' <a href='.$urlformulaire.'>Retour au formulaire</a></p>'."\n</div>";
-		}
+    	if ($mail->addReplyTo($_POST['email'], $_POST['nom'], $_POST['prenom'])) {
+        	$mail->Subject = 'Formulaire de contact Antoine Vanderbrecht';
+        	$mail->isHTML(false);
+
+        	$mail->Body = <<<EOT
+Email: {$_POST['email']}
+Nom: {$_POST['nom']}
+Prénom : {$_POST['prenom']}
+Message: {$_POST['message']}
+EOT;
+		
+
+        if (!$mail->send()) {
+            echo 'Désolé, quelque chose a mal tourné. Veuillez réessayer plus tard.';
+        } else {
+            // Message 
+            echo '<div class="contactmessage"> <p>'.$msg_ok.'Vous allez être rediriger automatiquement. Sinon retournez sur le site en <a href='.$urlformulaire.'>cliquant ici</a></p></div>'."\n";
+
+            // Reset des champs 
+            $_POST['nom'] = "";
+			$_POST['prenom'] = "";
+			$_POST['sujet'] = "";
+			$_POST['email'] = "";
+			$_POST['message'] = "";
+			$_POST['envoi'] = "";
+
+			// Redirection
+            header ('Location:/#messagesucces');
+
+        }
+
+    }
+
+	} else {
+		// une des 3 variables (ou plus) est vide ...
+		echo '<div class="contactmessage"><p> Erreur dans le formulaire. Tout les champs ne sont pas remplit ou érronés.<br/><br/><a href='.$urlformulaire.'>Retour au formulaire</a></p>\n</div>';
+	
+	}
+
+   	} else {
+       	echo 'L\'un des champs est invalide. Le message n\'a pas été envoyé.';
+    }
+
+}
+  $mail->SmtpClose();
+
+///////////// CODE  /////////////////
+
+/*
+$msg_ok = "Votre demande a bien été prise en compte.";
+$message = $msg_erreur;
+
+
+
+//  Message non transmit par le formulaire
+if (!isset($_POST['envoi'])){
+	echo "<div id=\"contacterreur\">Vous n'avez pas envoyé le formulaire. Ou celui-ci est mal rempli. <br/> <br/> <a href=" . $urlformulaire . ">Retourner sur le site</a> <div>";
+	$delai=5; 
+	header("Refresh: $delai;url=$urlformulaire");
+}
+
+
+
+
+ 
+
+
+		
+
 
 
 	}else {
@@ -153,7 +147,7 @@ if( isset($_POST['email']) && isset($_POST['nom']) && isset($_POST['prenom']) &&
 	}
 
 }
-
+*/
 /////////////////////////////////////////////
 
 ?>
