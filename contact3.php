@@ -32,7 +32,7 @@ require 'vendor/autoload.php';
     $mail->Password = 'IN6Mrra7IWxP';
     $mail->setFrom('contact@antoinevanderbrecht.fr', 'Antoine Vanderbrecht');
 
-    $mail->addAddress('contact@antoinevanderbrecht.fr', 'Antoine test');
+    $mail->addAddress('contact@antoinevanderbrecht.fr', 'Antoine Vanderbrecht');
 
 
 
