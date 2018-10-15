@@ -73,33 +73,33 @@ include 'articles.php';
 
 					<h3>Photoshop</h3>
 					<div class="progressbar">
-   						<div id="ph"><h4>76%</h4></div>
+   						<div id="ph"></div>
 					</div>
 
           <h3>Illustrator</h3>
           <div class="progressbar">
-              <div id="il"><h4>76%</h4></div>
+              <div id="il"></div>
           </div>
 
 					<h3>Audition</h3>
 					<div class="progressbar">
-   						<div id="au"><h4>75%</h4></div>
+   						<div id="au"></div>
 					</div>
 
 					<h3>Premiere Pro</h3>
 					<div class="progressbar">
-   						<div id="pp"><h4>65%</h4></div>
+   						<div id="pp"></div>
 					</div>
 
 					<h3>Photoshop</h3>
 					<div class="progressbar">
-   						<div id=""><h4>75%</h4></div>
+   						<div id=""></div>
 					</div>
 
           <h3>Git</h3>
-            <h4>J'ai notamment déployé mon site avec GitHub</h4>
+            <h4><i>Portfolio déployé avec GitHub</i></h4>
             <div class="progressbar">
-              <div id="il"><h4>55%</h4></div>
+              <div id="il"></div>
           </div>
 		
     
@@ -246,7 +246,7 @@ include 'articles.php';
 	<br />
 		<div id="contact">
 			<br />
-			<div class="titre"> N'hésitez pas à me contacter &#x1F609 </div>
+			<div class="titre"> N'hésitez pas à me contacter <span  style="color:/*#FF931E*/ #2EA4BF;">!</span> </div>
 			<form method="post" action="contact3.php" id="formcontact">
     			<input type="text" name="nom" placeholder="Entrez votre nom" class="form_info" required>
     			<input type="text" name="prenom" placeholder="Entrez votre prénom" class="form_info" required>
