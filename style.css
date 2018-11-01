@@ -81,9 +81,9 @@ a:visited {
 
 
 .header-menu a:hover{
-    /*background-color: rgb(46, 164, 191, 0.3);*/
-    background-color: rgb(255, 147, 30, 0.3);
-    color: white;
+    background-color: rgb(46, 164, 191, 0.3);
+    /*background-color: rgb(255, 147, 30, 0.3);*/
+    /*color: white;*/
     transition-duration: 1.5s;
 }
 
@@ -512,7 +512,7 @@ form textarea {
     .menu-deroulant{
         display:block;
     }
-    .menu-fermer {
+    a .menu-fermer {
         display:none;
     }
     #menu-nav a {
