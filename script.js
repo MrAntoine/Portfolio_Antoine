@@ -95,9 +95,9 @@ function action(nom) {
 	// ON COMPTE LE NOMBRE D'ARTICLE
 
 	var nb_web = document.getElementsByClassName("Web").length;
-	var nb_design = document.getElementsByClassName("Design").length;
+	var nb_audiovisuel = document.getElementsByClassName("AudioVisuel").length;
 	var nb_projet_perso = document.getElementsByClassName("Projet Perso").length;
-	var nb_tout = nb_design + nb_web + nb_projet_perso;
+	var nb_tout = nb_audiovisuel + nb_web + nb_projet_perso;
 
 
 	if(nom == "Tout"){
@@ -105,7 +105,7 @@ function action(nom) {
 			for(let i=0; i<list.length; i++){
 			list[i].style.display = "inline-block";
 			}
-			let list1 = document.getElementsByClassName("Design");
+			let list1 = document.getElementsByClassName("AudioVisuel");
 			for(let j=0; j<list1.length; j++){
 				list1[j].style.display = "inline-block";
 			}
@@ -122,7 +122,7 @@ function action(nom) {
 				list[i].style.display = "inline-block";
 			}
 			//suppression autre catégories
-			let list1 = document.getElementsByClassName("Design");
+			let list1 = document.getElementsByClassName("AudioVisuel");
 			for(let j=0; j<list1.length; j++){
 				list1[j].style.display = "none";
 			}
@@ -133,9 +133,9 @@ function action(nom) {
 
 			} 
 
-		if(nom == "Design"){
-			// Affichage catégorie design
-			let list = document.getElementsByClassName("Design");
+		if(nom == "AudioVisuel"){
+			// Affichage catégorie AudioVisuel
+			let list = document.getElementsByClassName("AudioVisuel");
 			for(let i=0; i<list.length; i++){
 				list[i].style.display = "inline-block";
 			}
@@ -152,7 +152,7 @@ function action(nom) {
 			}
 
 			if(nom == "Projet Perso"){
-			// Affichage catégorie design
+			// Affichage catégorie AudioVisuel
 			let list2 = document.getElementsByClassName("Projet Perso");
 			for(let k=0; k<list2.length; k++){
 				list2[k].style.display = "inline-block";
@@ -162,7 +162,7 @@ function action(nom) {
 			for(let j=0; j<list1.length; j++){
 				list1[j].style.display = "none";
 			}	
-			let list = document.getElementsByClassName("Design");
+			let list = document.getElementsByClassName("AudioVisuel");
 			for(let i=0; i<list.length; i++){
 				list[i].style.display = "none";
 			}
@@ -174,10 +174,7 @@ function action(nom) {
 
 
 
-
-
-
-
+/*
 function survolarticle(gh,cla,nb) {
 	//gh.style.backgroundColor="white";
 	gh.style.opacity=0.5;	
@@ -196,7 +193,7 @@ var list2 = document.getElementById("ensavoirplus"+nb);
 list2.style.display = "none";
 }
 
-
+*/
 
 
 
@@ -208,6 +205,4 @@ divo.pseudoStyle("before","color","purple");
 
 
 */
-
-
 

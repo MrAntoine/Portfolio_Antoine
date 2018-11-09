@@ -57,7 +57,7 @@ include 'articles.php';
 			<a class="bouton_bannere" id="boutondroite" href="" target="_blank" >A venir</a>
 
 			<h1>
-  				<a href="" class="typewrite" data-period="2000" data-type='[ "Bonjour, Je suis Antoine Vanderbrecht.", "Étudiant en MMI.", "I Love Design." ]'>
+  				<a href="" class="typewrite" data-period="2000" data-type='[ "Bonjour, Je suis Antoine Vanderbrecht.", "Étudiant en MMI.", "I Love AudioVisuel." ]'>
     				<span class="wrap"></span>
  				 </a>
 			</h1>
@@ -117,85 +117,63 @@ include 'articles.php';
 				
 				<div id="categories_nav">
 					<a class="active" onClick="action('Tout')"/>Tout</a>	
-					<a  class="" onClick="action('Web')"/>Web</a>	
-					<a  class="" onClick="action('Design')"/>Design</a>	
-					<a  class="" onClick="action('Projet Perso')"/>Projet Perso</a>	
+					<a class="" onClick="action('Web')"/>Web</a>	
+					<a class="" onClick="action('AudioVisuel')"/>AudioVisuel</a>	
+					<a class="" onClick="action('Projet Perso')"/>Projet Perso</a>	
 				</div>
 
 
 			<div id="articles">
 
 
-					<div class="portfolio">
+					<div class="portfolio Web">
 						<a href="#projet01">
-            				<div class="portfolio_info" id="ensavoirplus1">
-            				</div>
-            				
-            				<img src="img/image_cosmopolitan.jpg" alt="image projet Cosmopolitan" class="Web" onmouseover="survolarticle(this,this.className,1)" onmouseout="survolarticle2(this,1)">
+            				<img src="img/image_cosmopolitan.jpg" alt="image projet Cosmopolitan">
+                     <span class="articles-over"><span><p>Cosmopolitan</p></br><p>Découvrir en cliquant</p></span></span>
           				</a>
         			</div>
 
-
-        			<div class="portfolio">
+        			<div class="portfolio AudioVisuel">
           				<a href="#projet02">
-            				<div class="portfolio_info" id="ensavoirplus2">
-              					<h3>Projet 2<h3><span class="categories">Web</span>
-            				</div>
-            				<img src="img/image3.png" alt="Seak" class="Web" onmouseover="survolarticle(this,this.className,2)" onmouseout="survolarticle2(this,2)">
+            				<img src="img/court_metrage.png" alt="image court-metrage">
+                    <span class="articles-over"><span><p>Court Métrage</p></br><p>Découvrir en cliquant</p></span></span>
           				</a>
         			</div>
 
-        			<div class="portfolio">
+        			<div class="portfolio Web">
           				<a href="#projet03">
-            				<div class="portfolio_info" id="ensavoirplus3">
-              					<p>Projet 3<br><span class="categories">Design</span></p>
-            				</div>
-            				<img src="img/image1.jpg" alt="Seak" class="Design" onmouseover="survolarticle(this,this.className,3)" onmouseout="survolarticle2(this,3)">
+            				<img src="img/image1.jpg" alt="image mini projet facebook">
+                    <span class="articles-over"><span><p>Mini projet Facebook</p></br><p>Découvrir en cliquant</p></span></span>
           				</a>
         			</div>
 
-        			<div class="portfolio">
+        			<div class="portfolio Web">
           				<a href="#projet04">
-            				<div class="portfolio_info" id="ensavoirplus4">
-              					<p>Projet 4<br><span class="categories">Web</span></p>
-            				</div>
-            				<img src="img/image.jpg" alt="Seak" class="Web" onmouseover="survolarticle(this,this.className,4)" onmouseout="survolarticle2(this,4)">
+            				<img src="img/image.jpg" alt="Seak">
           				</a>
         			</div>
 
-        			<div class="portfolio">
+        			<div class="portfolio AudioVisuel">
           				<a href="#projet05">
-            				<div class="portfolio_info" id="ensavoirplus5">
-              					<p>Projet 5<br><span class="categories">Design</span></p>
-            				</div>
-            				<img src="img/image2.jpg" alt="Seak" class="Design" onmouseover="survolarticle(this,this.className,5)" onmouseout="survolarticle2(this,5)">
+            				<img src="img/image2.jpg" alt="Seak">
           				</a>
         			</div>
 
-        			<div class="portfolio">
+        			<div class="portfolio AudioVisuel">
           				<a href="#projet06">
-            				<div class="portfolio_info" id="ensavoirplus6">
-              					<p>Projet 6<br><span class="categories">Design</span></p>
-            				</div>
-            				<img src="img/image3.png" alt="Seak" class="Design" onmouseover="survolarticle(this,this.className,6)" onmouseout="survolarticle2(this,6)">
+            				<img src="img/image3.png" alt="Seak">
           				</a>
         			</div>
 
-        			<div class="portfolio">
+        			<div class="portfolio AudioVisuel">
           				<a href="#projet07">
-            				<div class="portfolio_info" id="ensavoirplus7">
-              					<p>Projet 7<br><span class="categories">Design</span></p>
-            				</div>
-            				<img src="img/image1.jpg" alt="Seak" class="Design" onmouseover="survolarticle(this,this.className,7)" onmouseout="survolarticle2(this,7)">
+            				<img src="img/image1.jpg" alt="Seak">
           				</a>
         			</div>
 
-        			<div class="portfolio">
+        			<div class="portfolio Projet Perso">
           				<a href="#projet08">
-            				<div class="portfolio_info" id="ensavoirplus2">
-              					<h3>Projet 8<h3><span class="categories">Projet Perso</span>
-            				</div>
-            				<img src="img/image.jpg" alt="Seak" class="Projet Perso" onmouseover="survolarticle(this,this.className,8)" onmouseout="survolarticle2(this,8)">
+            				<img src="img/image.jpg" alt="Seak">
           				</a>
         			</div>
 
@@ -262,7 +240,7 @@ include 'articles.php';
 
 
 <div id="footer">
-	<div id="copy">© 2018 - Antoine VANDERBRECHT </div>
+	<div id="copy">© 2018 - Antoine VANDERBRECHT - Tous droits réservés </div>
 </div>
 
 

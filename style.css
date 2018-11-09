@@ -194,9 +194,9 @@ a:visited {
 /* ///// Articles grille ///// */
 
 #articles {
-	height: auto;
+	/*height: auto;*/
 	display: grid;
-	grid-template-columns: auto auto auto auto;
+	grid-template-columns: 1fr 1fr 1fr;
 	/*grid-template-rows: auto auto auto auto;
 	grid-auto-rows: minmax(250px, auto);*/
 	padding: 15px;
@@ -210,39 +210,60 @@ a:visited {
     position: relative;
 }
 
-/*
-.portfolio_info {
-    display:none;
-    position: absolute;
-    /*top: 0;
-    right: 0;
-    bottom: 25px;
-    left: 0;
-    font-size:24px;
-    -moz-transition: all 0.3s;
-    -o-transition: all 0.3s;
-    -webkit-transition: all 0.3s;
-    transition: all 0.3s;
-    text-align:center;
-    color: red;
+.portfolio:hover {
+    position: relative;
 }
-*/
+
+/* A REVOIR*/
+
+.articles-over{
+    position: absolute;
+    background: rgba(0,0,0,0.7);
+    top: 10px;
+    bottom: 10px;
+    left:10px;
+    right: 10px;
+    opacity: 0;
+    text-align: center;
+    transition: opacity 300ms ease-in-out;
+}
+
+.articles-over > span{
+    position: absolute;
+    width: 100%;
+    font-size: 24pt;
+    font-weight: bold;
+    color: #FF931E;
+    top:100%;
+    left:0; /* on met le titre le plus a gauche possible **/
+    overflow: hidden;
+    transform: translateY(-50%);
+    transition: top 200ms ease-in-out;
+}
+
+.portfolio a:hover .articles-over{
+    opacity: 1;
+}
+
+.portfolio a:hover .articles-over > span{
+    top:50%;
+    
+}
+
+.portfolio .articles-over p:last-child {
+    font-size: 14pt;
+    margin-top:20px;
+    color:white;
+}
+
+/* Jusqu'ici ^ */
 
 .portfolio img {
     width: 100%;
     height: auto;
 }
 
-.portfolio_info p {
-	opacity: 1;
-	text-transform: uppercase;
-}
 
-.portfolio_info .categories {
-    font-size: 16px;
-    color: #FF931E;
-    opacity: 1;
-}
 
 /* ///// COMPETENCES ///// */ 
 
@@ -389,6 +410,11 @@ form textarea {
 	padding:10px;
 	position: relative;
 	text-align: center;
+}
+
+#copy {
+    top:50%;
+    transform: translateY(-50%);
 }
 
 
