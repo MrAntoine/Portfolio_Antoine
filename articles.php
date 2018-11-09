@@ -10,7 +10,11 @@
       							</div>
       							<div class="container">
         							<p>Reproduction du site internet Cosmopolitan.</p>
-        							<p>Ce qui m'a permis d'apprendre à utilisé Boostrap.</p>
+        							<p><ul>
+                        <li>Découverte du système bosstrap</li>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                      </ul></p>
       							</div>
       							<div class ="footermodal">
       								<div class="container">

@@ -3,10 +3,10 @@ html {
 }
 
 *{
-   margin: 0;
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
-   font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 body {
@@ -210,10 +210,11 @@ a:visited {
     position: relative;
 }
 
+/*
 .portfolio_info {
     display:none;
     position: absolute;
-    /*top: 0;*/
+    /*top: 0;
     right: 0;
     bottom: 25px;
     left: 0;
@@ -225,6 +226,7 @@ a:visited {
     text-align:center;
     color: red;
 }
+*/
 
 .portfolio img {
     width: 100%;
@@ -458,6 +460,10 @@ form textarea {
 .container {
   padding: 2px 16px;
   word-wrap: break-word;
+}
+
+.container {
+  padding-left: 20px;
 }
 
 .headermodal {

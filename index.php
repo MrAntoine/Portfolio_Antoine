@@ -101,9 +101,6 @@ include 'articles.php';
             <div class="progressbar">
               <div id="il"></div>
           </div>
-		
-    
-
 
 	
 
@@ -132,12 +129,10 @@ include 'articles.php';
 					<div class="portfolio">
 						<a href="#projet01">
             				<div class="portfolio_info" id="ensavoirplus1">
-              					<h3>Cosmopolitan</h3>
-              					<span class="categories">Web</span>
             				</div>
-            				</a>
-            				<img src="img/image1.jpg" alt="image projet Cosmopolitan" class="Web" onmouseover="survolarticle(this,this.className,1)" onmouseout="survolarticle2(this,1)">
-          				
+            				
+            				<img src="img/image_cosmopolitan.jpg" alt="image projet Cosmopolitan" class="Web" onmouseover="survolarticle(this,this.className,1)" onmouseout="survolarticle2(this,1)">
+          				</a>
         			</div>
 
 
