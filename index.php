@@ -57,7 +57,7 @@ include 'articles.php';
 			<a class="bouton_bannere" id="boutondroite" href="" target="_blank" >A venir</a>
 
 			<h1>
-  				<a href="" class="typewrite" data-period="2000" data-type='[ "Bonjour, Je suis Antoine Vanderbrecht.", "Étudiant en MMI.", "I Love AudioVisuel." ]'>
+  				<a href="" class="typewrite" data-period="2000" data-type='[ "Bonjour, je suis Antoine Vanderbrecht.", "Étudiant en MMI.", "I Love Audiosisuel." ]'>
     				<span class="wrap"></span>
  				 </a>
 			</h1>
@@ -65,51 +65,134 @@ include 'articles.php';
 		</div>
 
 	
-	<br />
+	<br/>
 		<div id="competences">
 			<br />
 			<div class="titre"> Mes principales compétences </div>
 				<div id="listecomp">
 
-					<h3>Photoshop</h3>
-					<div class="progressbar">
-   						<div id="ph"></div>
-					</div>
 
-          <h3>Illustrator</h3>
-          <div class="progressbar">
-              <div id="il"></div>
+          <div>
+            <h3>Photoshop</h3>
+              <p> <span class="orange">&lt&gt&lt&gt&lt&gt&lt&gt</span>&lt&gt</p>
+          </div>
+          <div>
+            <h3>Audition</h3>
+              <p> &lt&gt&lt&gt&lt&gt&lt&gt&lt&gt</p>
+          </div>
+          <div>
+            <h3>Indesign</h3>
+              <p> &lt&gt&lt&gt&lt&gt&lt&gt&lt&gt</p>
+          </div>
+          <div>
+            <h3>Illustrator</h3>
+              <p> &lt&gt&lt&gt&lt&gt&lt&gt&lt&gt</p>
+          </div>
+          <div>
+            <h3>Character Animator</h3>
+              <p> &lt&gt&lt&gt&lt&gt&lt&gt&lt&gt</p>
+          </div>
+          <div>
+            <h3>Premiere Pro</h3>
+              <p> &lt&gt&lt&gt&lt&gt&lt&gt&lt&gt</p>
+          </div>
+          <div>
+            <h3>Git</h3>
+              <p> &lt&gt&lt&gt&lt&gt&lt&gt&lt&gt</p>
+          </div>
+          <div>
+            <h3>WordPress</h3>
+              <p> &lt&gt&lt&gt&lt&gt&lt&gt&lt&gt</p>
+          </div>
+          <div>
+            <h3>Boostrap</h3>
+              <p> &lt&gt&lt&gt&lt&gt&lt&gt&lt&gt</p>
+          </div>
+           <div>
+            <h3>HTML / CSS</h3>
+              <p> &lt&gt&lt&gt&lt&gt&lt&gt&lt&gt</p>
+          </div>
+           <div>
+            <h3>Php</h3>
+              <p> &lt&gt&lt&gt&lt&gt&lt&gt&lt&gt</p>
+          </div>
+           <div>
+            <h3>Mysql</h3>
+              <p> &lt&gt&lt&gt&lt&gt&lt&gt&lt&gt</p>
+          </div>
+           <div>
+            <h3>React</h3>
+              <p> &lt&gt&lt&gt&lt&gt&lt&gt&lt&gt</p>
+          </div>
+           <div>
+            <h3>JavaScript</h3>
+              <p> &lt&gt&lt&gt&lt&gt&lt&gt&lt&gt</p>
+          </div>
+           <div>
+            <h3>Java</h3>
+              <p> &lt&gt&lt&gt&lt&gt&lt&gt&lt&gt</p>
+          </div>
+           <div>
+            <h3>jQuery</h3>
+              <p> &lt&gt&lt&gt&lt&gt&lt&gt&lt&gt</p>
+          </div> <div>
+            <h3>Services sur réseau</h3>
+              <p> &lt&gt&lt&gt&lt&gt&lt&gt&lt&gt</p>
           </div>
 
-					<h3>Audition</h3>
-					<div class="progressbar">
+          
+<!--
+          <div>
+					  <h3>Photoshop</h3>
+					    <div class="progressbar">
+   					    <div id="ph"></div>
+					    </div>
+          </div>
+          <div>
+            <h3>Illustrator</h3>
+              <div class="progressbar">
+                <div id="il"></div>
+              </div>
+          </div>
+          <div>
+				    <h3>Audition</h3>
+					   <div class="progressbar">
    						<div id="au"></div>
-					</div>
-
-					<h3>Premiere Pro</h3>
-					<div class="progressbar">
-   						<div id="pp"></div>
-					</div>
-
-					<h3>Photoshop</h3>
-					<div class="progressbar">
-   						<div id=""></div>
-					</div>
-
-          <h3>Git</h3>
-            <h4><i>Portfolio déployé avec GitHub</i></h4>
-            <div class="progressbar">
-              <div id="il"></div>
+					   </div>
           </div>
+          <div>
+					  <h3>Premiere Pro</h3>
+					  <div class="progressbar">
+   						<div id="pp"></div>
+					  </div>
+          </div>
+          <div>
+				    <h3>Photoshop</h3>
+					  <div class="progressbar">
+   				 		<div id=""></div>
+					  </div>
+          </div>
+          <div>
+            <h3>Git</h3>
+              <h4><i>Portfolio déployé avec GitHub</i></h4>
+              <div class="progressbar">
+                <div id="il"></div>
+              </div>
+          </div>
+          <div>
+            <h3>Character Animator</h3>
+              <div class="progressbar">
+                <div id="ch"></div>
+              </div>
+          </div>
+-->
 
-	
-
-		</div>
+		    </div>
 
 
 
 
-	<br />
+	<br/>
 		<div id="portfolio">
 		<br />
 			<div class="titre"> Découvrez mes différentes réalisations ! </div>
@@ -129,14 +212,14 @@ include 'articles.php';
 					<div class="portfolio Web">
 						<a href="#projet01">
             				<img src="img/image_cosmopolitan.jpg" alt="image projet Cosmopolitan">
-                     <span class="articles-over"><span><p>Cosmopolitan</p></br><p>Découvrir en cliquant</p></span></span>
+                     <span class="articles-over"><span><h4>Cosmopolitan</h4><p>Reproduction de ce site utiliant bosstrapeproduction de ce site utiliant bosstrapeproduction de ce site utiliant bosstrapeproduction de ce site utiliant bosstrapeproduction de ce site utiliant bosstrapeproduction de ce site utiliant bosstrap.</p><p>Découvrir en cliquant</p></span></span>
           				</a>
         			</div>
 
         			<div class="portfolio AudioVisuel">
           				<a href="#court-metrage">
             				<img src="img/court_metrage.png" alt="image court-metrage">
-                    <span class="articles-over"><span><p>Court Métrage</p></br><p>Découvrir en cliquant</p></span></span>
+                    <span class="articles-over"><span><p>Court Métrage <i>"Annonce"</i></p></br><p>Découvrir en cliquant</p></span></span>
           				</a>
         			</div>
 
@@ -219,7 +302,7 @@ include 'articles.php';
 	<br />
 		<div id="contact">
 			<br />
-			<div class="titre"> N'hésitez pas à me contacter <span  style="color:/*#FF931E*/ #2EA4BF;">!</span> </div>
+			<div class="titre">Contactez moi  <span  style="color:/*#FF931E*/ #2EA4BF;">!</span> </div>
 			<form method="post" action="contact3.php" id="formcontact">
     			<input type="text" name="nom" placeholder="Entrez votre nom" class="form_info" required>
     			<input type="text" name="prenom" placeholder="Entrez votre prénom" class="form_info" required>
