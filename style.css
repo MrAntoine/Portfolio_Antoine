@@ -371,9 +371,10 @@ a:visited {
 
 
 /* CONTACT */
-#contact {
+
+/*#contact {
     background-image: url(img/image2.jpg);
-}
+}*/
 
 /* FORMULAIRE */
 #formcontact  {
@@ -431,8 +432,6 @@ form textarea {
   width: 100%;
   height: 100%;
   overflow: auto;
-  background-color: rgb(0, 0, 0);
-  background-color: rgba(0, 0, 0, 0.8);
 }
 
 /* Display the modal when targeted */
@@ -444,8 +443,9 @@ form textarea {
 
 /* The modal box */
 .modal-dialog {
-  display: table-cell;
-  vertical-align: middle;
+    display: table-cell;
+    vertical-align: middle;
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
 /* The modal's content */
@@ -484,11 +484,13 @@ form textarea {
 }
 
 .container {
-  padding: 2px 16px;
-  word-wrap: break-word;
+    padding: 2px 16px;
+    word-wrap: break-word;
+    max-height: 500px;
+    overflow: auto;
 }
 
-.container {
+.modal-content > .container {
   padding-left: 20px;
 }
 
@@ -503,6 +505,8 @@ form textarea {
     font-size: 14px;
     color: white;
     text-align: left;
+    padding: 5px 0px 5px 0px;
+    font-weight: bold;
 }
 
 

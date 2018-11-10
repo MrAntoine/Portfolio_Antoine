@@ -68,7 +68,7 @@ include 'articles.php';
 	<br />
 		<div id="competences">
 			<br />
-			<div class="titre"> COMPÉTENCES </div>
+			<div class="titre"> Mes principales compétences </div>
 				<div id="listecomp">
 
 					<h3>Photoshop</h3>
@@ -134,7 +134,7 @@ include 'articles.php';
         			</div>
 
         			<div class="portfolio AudioVisuel">
-          				<a href="#projet02">
+          				<a href="#court-metrage">
             				<img src="img/court_metrage.png" alt="image court-metrage">
                     <span class="articles-over"><span><p>Court Métrage</p></br><p>Découvrir en cliquant</p></span></span>
           				</a>
