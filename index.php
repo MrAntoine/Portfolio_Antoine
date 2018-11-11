@@ -8,21 +8,13 @@ include 'articles.php';
 <head>
 	<title> Antoine Vanderbrecht </title>
 	<meta charset="UTF-8">
-
 	<link rel="icon" type="image/png" href="img/favicon.png" />
-
 	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width" />
-
 	<link href="style.css" rel="stylesheet" type="text/css" />
-
 	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-
 	<script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.js"></script>
-
 	<script type="text/javascript" src="script.js"></script>
-
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
-
 </head>
 
 <body>
@@ -140,6 +132,8 @@ include 'articles.php';
               <p> &lt&gt&lt&gt&lt&gt&lt&gt&lt&gt</p>
           </div>
 
+
+
           
 <!--
           <div>
@@ -190,6 +184,55 @@ include 'articles.php';
 		    </div>
 
 
+        <div id="grid-competences">
+
+           <div>
+            <h3>&lt&gt Programmation &lt&gt</h3>
+              <p><ul>
+                <li>HTML / CSS</li>
+                <li>JavaScript</li>
+                <li>Php</li>
+                <li>Mysql</li>
+                <li>jQuery</li>
+                <li>Java</li>
+                <li>React</li>
+                <li>Boostrap</li>
+                <li>WordPress</li>
+                <li>Git</li>
+                <li>Services sur réseau</li>
+              </ul></p>
+          </div>
+
+           <div>
+            <h3>&lt&gt Audiovisuel &lt&gt</h3>
+              <p><ul>
+                <li>Photoshop</li>
+                <li>Illustrator</li>
+                <li>Audtion</li>
+                <li>Premiere Pro</li>
+                <li>Character Animator</li>
+                <li>Indesign</li>
+                <li>Prise de son</li>
+              </ul></p>
+          </div>
+
+           <div>
+            <h3>&lt&gt Web &lt&gt</h3>
+              <p><ul>
+                <li>HTML / CSS</li>
+                <li>JavaScript</li>
+                <li>Php</li>
+              </ul></p>
+          </div>
+          
+
+
+
+
+
+        </div>
+
+
 
 
 	<br/>
@@ -230,35 +273,8 @@ include 'articles.php';
           				</a>
         			</div>
 
-        			<div class="portfolio Web">
-          				<a href="#projet04">
-            				<img src="img/image.jpg" alt="Seak">
-          				</a>
-        			</div>
+        			
 
-        			<div class="portfolio AudioVisuel">
-          				<a href="#projet05">
-            				<img src="img/image2.jpg" alt="Seak">
-          				</a>
-        			</div>
-
-        			<div class="portfolio AudioVisuel">
-          				<a href="#projet06">
-            				<img src="img/image3.png" alt="Seak">
-          				</a>
-        			</div>
-
-        			<div class="portfolio AudioVisuel">
-          				<a href="#projet07">
-            				<img src="img/image1.jpg" alt="Seak">
-          				</a>
-        			</div>
-
-        			<div class="portfolio Projet Perso">
-          				<a href="#projet08">
-            				<img src="img/image.jpg" alt="Seak">
-          				</a>
-        			</div>
 
         	
 
