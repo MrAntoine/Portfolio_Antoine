@@ -271,7 +271,6 @@ a:visited {
 
 .portfolio .articles-over p:first-child {
     font-size: 14pt;
-    color:orange;
     text-align: left;
     font-weight:bold;
 }
@@ -402,7 +401,12 @@ a:visited {
     border: 1px solid #2EA4BF;
     padding: 3px 12px 3px 12px;
     font-size: medium;
+}
 
+
+#listecomp .details:hover {
+    color: white;
+    background-color: #2EA4BF;
 }
 
 /* BANNIERE PROFIL */
@@ -519,6 +523,68 @@ form textarea {
 
 
 /* /////////// MODAL /////////// */
+
+@keyframes slidy5 {
+    0% { left: 0%; }
+    20% { left: 0%; }
+    25% { left: -100%; }
+    45% { left: -100%; }
+    50% { left: -200%; }
+    70% { left: -200%; }
+    75% { left: -300%; }
+    95% { left: -300%; }
+    100% { left: -400%; }
+}
+
+@keyframes slidy4 {
+    0% { left: 0%; }
+    25% { left: 0%; }
+    30% { left: -100%; }
+    50% { left: -100%; }
+    55% { left: -200%; }
+    75% { left: -200%; }
+    100% { left: -300%; }
+}
+
+@keyframes slidy3 {
+    0% { left: 0%; }
+    20% { left: 0%; }
+    25% { left: -100%; }
+    45% { left: -100%; }
+    50% { left: -200%; }
+    70% { left: -200%; }
+    75% { left: -300%; }
+    95% { left: -300%; }
+    100% { left: -400%; }
+}
+
+@keyframes slidy2 {
+    0% { left: 0%; }
+    50% { left: -50%; }
+    100% { left: -100%; }
+}
+
+div.slider {
+    overflow: hidden;
+    float: right;
+    width: 50%;
+}
+
+div.slider figure img {
+    width: 20%;
+    float: left;
+}
+
+div.slider figure {
+    position: relative;
+    width: 500%;
+    margin: 0;
+    left: 0;
+    text-align: left;
+    font-size: 0;
+    animation: 30s slidy5 infinite;
+}
+
 
 
 /* The modal's background */

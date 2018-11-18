@@ -10,6 +10,14 @@
       								</div>
       							</div>
       							<div class="container">
+                                    <div class="slider">
+                                        <figure style="animation: 30s slidy4 infinite;">
+                                            <img src="img/cosmo1.png" alt="image cosmo">
+                                            <img src="img/cosmo2.png" alt="image cosmo">
+                                            <img src="img/cosmo3.png" alt="image cosmo">
+                                            <img src="img/image_cosmopolitan.jpg" alt="image cosmo">
+                                        </figure>
+                                    </div>
         							<p>Afin de nous familiariser avec Boostrap, lors d'un travail universitaire, nous avons du reproduire le site internet Cosmopolitan sur un plan ésthétique.</p>
         							<p><br/><ul>Compétences visées :
                         <li>Utilisation du système boostrap</li>
@@ -39,7 +47,7 @@
                         <img src="img/court_metrage.png">
                       <p>Lors de ma deuxième année de dut MMI, j'ai du réaliser un court-métrage avec 6 de mes collègues.</p>
                       <p>Pour réaliser ce court-métrage, différentes étapes ont étaient nécessaires :
-                        vAvant la production j'ai eu l'occasion de participer à : <ul>
+                        Avant la production : <ul>
                           <li>L'écriture du synopsis</li>
                           <li>L'écriture du scénario</li>
                           <li>Castings</li>
@@ -47,13 +55,13 @@
                           <li>Organisation / planning</li>
                           <li>Relations acteurs</li>
                         </ul>
-                        <ul>Lors du tourngae j'ai fais : 
+                        <ul>Lors du tourngae :
                           <li>Prise de son</li>
                           <li>Régie</li>
                           <li>Castings</li>
                           <li>Relations acteurs</li>
                         </ul>
-                         <ul>Lors de la post production j'ai fais : 
+                         <ul>Lors de la post production :
                           <li>Montage son</li>
                           <li>Création du site web (communication du court-métrage) <a target="_blank" href="https://www.labandeannoncelefilm.fr">Disponible ici</a></li>
                         </ul>
@@ -70,7 +78,7 @@
 
 
 
-<div id="projet03" class="modal">
+<div id="mini_facebook" class="modal">
               <div class="modal-dialog">
                 <div class="modal-content">
                   <div class="headermodal">
@@ -80,6 +88,15 @@
                       </div>
                     </div>
                     <div class="container">
+                        <div class="slider">
+                            <figure style="animation: 30s slidy5 infinite;">
+                                <img src="img/a_venir.png" alt="image mini projet facebook">
+                                <img src="img/a_venir.png" alt="image mini projet facebook">
+                                <img src="img/a_venir.png" alt="image mini projet facebook">
+                                <img src="img/a_venir.png" alt="image mini projet facebook">
+                                <img src="img/a_venir.png" alt="image mini projet facebook">
+                            </figure>
+                        </div>
                       <p>Lors d'un travail universitaire en groupe. Nous avons du créer un réseau social, type Facebook.</p>
                         <p>Ce réseau devait comprendre les fonctionnalités de bases de Facebook.</p>
                       <p>Nous avons également du concevoir un design pour notre réseau social.</p>
@@ -96,54 +113,68 @@
               </div>
           </div>
 
+<div id="logo_marathon_web" class="modal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="headermodal">
+                <div class="container">
+                    <a href="#portfolio" class="closebtn">×</a>
+                    <h2>Logo Marathon du Web 2018</h2>
+                </div>
+            </div>
+            <div class="container">
+                <div class="slider">
+                    <figure style="animation: 30s slidy2 infinite;">
+                        <img src="img/logo_marathon_web_2018.png" alt="image logo marathon du web 2018 V1">
+                        <img src="img/logo_marathon_web_2018.png" alt="image logo marathon du web 2018 V1">
+                    </figure>
+                </div>
+
+                <p>En vue du marathon du web, une épreuve universitaire. J'ai réalisé ce logo pour cet évenement, de l'année 2018.</p>
+                <p>Pour ce logo, j'ai joué avec les mots. Comme le marathon du web est un évenement dans le domaine du developpement web,
+                    j'ai eu l'idée d'intégrer des lignes de codes dans le filé d'un coureur.
+                    Sans doute un marathonien ;) </p>
+
+            </div>
+            <div class ="footermodal">
+                <div class="container">
+                    <p>Projet Perso : Infographie</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
 
 <div id="projet04" class="modal">
-              <div class="modal-dialog">
-                <div class="modal-content">
-                  <div class="headermodal">
-                    <div class="container"> 
-                        <a href="#portfolio" class="closebtn">×</a>
-                        <h2>Modal Header</h2>
-                      </div>
-                    </div>
-                    <div class="container">
-                      <p>Some text in the modal.</p>
-                      <p>Some textiuuuuuuuuuuuuuuuuuuuuuuh in the modal.</p>
-                    </div>
-                    <div class ="footermodal">
-                      <div class="container">
-                        <p>Modal footer</p>
-                      </div>
-                    </div>
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="headermodal">
+                <div class="container">
+                    <a href="#portfolio" class="closebtn">×</a>
+                    <h2>TITRE</h2>
                 </div>
-              </div>
-          </div>
-
-
-
-<div id="projet04" class="modal">
-              <div class="modal-dialog">
-                <div class="modal-content">
-                  <div class="headermodal">
-                    <div class="container"> 
-                        <a href="#portfolio" class="closebtn">×</a>
-                        <h2>Modal Header</h2>
-                      </div>
-                    </div>
-                    <div class="container">
-                      <p>Some text in the modal.</p>
-                      <p>Some textiuuuuuuuuuuuuuuuuuuuuuuh in the modal.</p>
-                    </div>
-                    <div class ="footermodal">
-                      <div class="container">
-                        <p>Modal footer</p>
-                      </div>
-                    </div>
+            </div>
+            <div class="container">
+                <div class="slider">
+                    <figure>
+                        <img src="img/image1.jpg" alt>
+                        <img src="img/image2.jpg" alt>
+                        <img src="img/image3.jpg" alt>
+                        <img src="img/encore.jpg" alt>
+                        <img src="img/encore221.jpg" alt>
+                    </figure>
                 </div>
-              </div>
-          </div>
-
+                <p>DESCRIPTION</p>
+            </div>
+            <div class ="footermodal">
+                <div class="container">
+                    <p>CATEGORIE</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
 
 <div id="projet05" class="modal">
@@ -202,7 +233,7 @@
             </div>
             <div class="container">
                 <img src="img/court_metrage.png">
-                <p>Pour réaliser ce court-métrage, différentes étapes ont étaient nécessaires :
+                <p>
                     <ul>
                     <li>Installation d'un serveur asterisk et des cleints VoIP (client linux et téléphone).
                         <ul>
@@ -231,36 +262,39 @@
             <div class="headermodal">
                 <div class="container">
                     <a href="#competences" class="closebtn">×</a>
-                    <h2>Laguages de programmation </h2>
+                    <h2>Langages de programmation </h2>
                 </div>
             </div>
             <div class="container">
                 <img src="img/court_metrage.png">
-                <p>Lors de ma deuxième année de dut MMI, j'ai du réaliser un court-métrage avec 6 de mes collègues.</p>
+                <p></p>
                 <div>
-                    <h3> Programmation Web : </h3>
+                    <h3> Langages : </h3>
                     <div class="progressbar2">
                         <div id="ph">HTML / CSS</div>
                     </div>
-
                     <div class="progressbar2">
                         <div id="ph">JavaScript</div>
                     </div>
-
                     <div class="progressbar2">
                         <div id="ph">Php / Mysql</div>
                     </div>
-
                     <div class="progressbar2">
                         <div id="ph">jQuery</div>
                     </div>
-
                     <div class="progressbar2">
                         <div id="ph">React</div>
                     </div>
-
                     <div class="progressbar2">
                         <div id="ph">Java</div>
+                    </div>
+
+                    <h3> CMS : </h3>
+                    <div class="progressbar2">
+                        <div id="ph">WordPress</div>
+                    </div>
+                    <div class="progressbar2">
+                        <div id="ph">PhpBB</div>
                     </div>
 
                 </div>
@@ -277,14 +311,14 @@
             <div class="headermodal">
                 <div class="container">
                     <a href="#competences" class="closebtn">×</a>
-                    <h2>Logiciels infographique </h2>
+                    <h2>Infographie</h2>
                 </div>
             </div>
             <div class="container">
                 <img src="img/court_metrage.png">
-                <p>Lors de ma deuxième année de dut MMI, j'ai du réaliser un court-métrage avec 6 de mes collègues.</p>
+                <p></p>
                 <div>
-                    <h3> blablabla </h3>
+                    <h3>Logiciels Infographiques</h3>
                     <div class="progressbar2">
                         <div id="ph">Photoshop</div>
                     </div>
@@ -311,14 +345,14 @@
             <div class="headermodal">
                 <div class="container">
                     <a href="#competences" class="closebtn">×</a>
-                    <h2>Logiciels audiovisuel </h2>
+                    <h2>Audiovisuel </h2>
                 </div>
             </div>
             <div class="container">
                 <img src="img/court_metrage.png">
-                <p>Lors de ma deuxième année de dut MMI, j'ai du réaliser un court-métrage avec 6 de mes collègues.</p>
+                <p></p>
                 <div>
-                    <h3> blablabla </h3>
+                    <h3>Logiciels</h3>
                     <div class="progressbar2">
                         <div id="au">Audition</div>
                     </div>

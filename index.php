@@ -80,7 +80,7 @@ include 'articles.php';
                 <div>
                     <h3>Developpement Web</h3>
                     <div class="progressbar">
-                        <div id="ph">Languages</div>
+                        <div id="ph">Langages</div>
                     </div>
                     <div class="progressbar">
                         <div id="ph">WordPress</div>
@@ -193,17 +193,24 @@ include 'articles.php';
                     </a>
                 </div>
 
-                <div class="portfolio AudioVisuel" style="background-image:url(img/court_metrage.png)" alt="image court-metrage">
+                <div class="portfolio AudioVisuel" style="background-image: url(img/court_metrage.png); background-size: contain; background-color: white; background-repeat: no-repeat;" alt="image court-metrage">
                     <a href="#court-metrage">
                         <span class="articles-over"><span><p>Court Métrage <i>"Annonce"</i></p></br><p>Découvrir en cliquant</p></span></span>
                     </a>
                 </div>
 
         			<div class="portfolio Web" style="background-image:url(img/facebook.png)" alt="image mini projet facebook">
-          				<a href="#projet03">
+          				<a href="#mini_facebook">
                     <span class="articles-over"><span><p>Mini projet Facebook</p></br><p>Découvrir en cliquant</p></span></span>
           				</a>
         			</div>
+
+                <div class="portfolio Projet Perso" style="background-image:url(img/logo_marathon_web_2018.png)" alt="image logo marathon du web 2018">
+                    <a href="#logo_marathon_web">
+                        <span class="articles-over"><span><p>Logo Marathon du web 2018</p><p>Réalisation d'un logo pour le marathon du web 2018. Un événement universitaire.</p>
+                                </br><p>Découvrir en cliquant</p></span></span>
+                    </a>
+                </div>
 
         			
 
