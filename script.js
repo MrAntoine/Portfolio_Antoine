@@ -88,6 +88,37 @@ var TxtType = function(el, toRotate, period) {
 
 
 ///////////// FONCTION TRIE ////////////
+/*
+function action(nom) {
+
+    var list, i, switching, b, shouldSwitch;
+
+    list = document.getElementById("articles");
+
+        // Start by saying: no switching is done:
+	b= list.getElementsByTagName("div");
+        console.log(b);
+
+	c= document.getElementsByClassName(nom);
+    console.log(c);
+
+
+
+        // Loop through all list items:
+        for (i = 0; i < b.length; i++) {
+
+            if (c[i]){
+                c[i].style.display = "inline-block";
+
+            } else {
+                b[i].style.display = "none";
+
+            }
+
+
+        }
+}*/
+
 
 function action(nom) {
 

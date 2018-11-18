@@ -49,7 +49,7 @@ include 'articles.php';
 			<a class="bouton_bannere" id="boutondroite" href="" target="_blank" >A venir</a>
 
 			<h1>
-  				<a href="" class="typewrite" data-period="2000" data-type='[ "Bonjour, je suis Antoine Vanderbrecht.", "Étudiant en MMI.", "I Love Audiosisuel." ]'>
+  				<a href="" class="typewrite" data-period="2000" data-type='[ "Bonjour, je suis Antoine Vanderbrecht.", "Étudiant en MMI. A l&#39;iut de Lens", "Passionné par le monde du numérique et du multimédia" ]'>
     				<span class="wrap"></span>
  				 </a>
 			</h1>
@@ -59,131 +59,80 @@ include 'articles.php';
 	
 	<br/>
 		<div id="competences">
-			<br />
-			<div class="titre"> Mes principales compétences </div>
-				<div id="listecomp">
-
-
-          <div>
-            <h3>Photoshop</h3>
-              <p> <span class="orange">&lt&gt&lt&gt&lt&gt&lt&gt</span>&lt&gt</p>
-          </div>
-          <div>
-            <h3>Audition</h3>
-              <p> &lt&gt&lt&gt&lt&gt&lt&gt&lt&gt</p>
-          </div>
-          <div>
-            <h3>Indesign</h3>
-              <p> &lt&gt&lt&gt&lt&gt&lt&gt&lt&gt</p>
-          </div>
-          <div>
-            <h3>Illustrator</h3>
-              <p> &lt&gt&lt&gt&lt&gt&lt&gt&lt&gt</p>
-          </div>
-          <div>
-            <h3>Character Animator</h3>
-              <p> &lt&gt&lt&gt&lt&gt&lt&gt&lt&gt</p>
-          </div>
-          <div>
-            <h3>Premiere Pro</h3>
-              <p> &lt&gt&lt&gt&lt&gt&lt&gt&lt&gt</p>
-          </div>
-          <div>
-            <h3>Git</h3>
-              <p> &lt&gt&lt&gt&lt&gt&lt&gt&lt&gt</p>
-          </div>
-          <div>
-            <h3>WordPress</h3>
-              <p> &lt&gt&lt&gt&lt&gt&lt&gt&lt&gt</p>
-          </div>
-          <div>
-            <h3>Boostrap</h3>
-              <p> &lt&gt&lt&gt&lt&gt&lt&gt&lt&gt</p>
-          </div>
-           <div>
-            <h3>HTML / CSS</h3>
-              <p> &lt&gt&lt&gt&lt&gt&lt&gt&lt&gt</p>
-          </div>
-           <div>
-            <h3>Php</h3>
-              <p> &lt&gt&lt&gt&lt&gt&lt&gt&lt&gt</p>
-          </div>
-           <div>
-            <h3>Mysql</h3>
-              <p> &lt&gt&lt&gt&lt&gt&lt&gt&lt&gt</p>
-          </div>
-           <div>
-            <h3>React</h3>
-              <p> &lt&gt&lt&gt&lt&gt&lt&gt&lt&gt</p>
-          </div>
-           <div>
-            <h3>JavaScript</h3>
-              <p> &lt&gt&lt&gt&lt&gt&lt&gt&lt&gt</p>
-          </div>
-           <div>
-            <h3>Java</h3>
-              <p> &lt&gt&lt&gt&lt&gt&lt&gt&lt&gt</p>
-          </div>
-           <div>
-            <h3>jQuery</h3>
-              <p> &lt&gt&lt&gt&lt&gt&lt&gt&lt&gt</p>
-          </div> <div>
-            <h3>Services sur réseau</h3>
-              <p> &lt&gt&lt&gt&lt&gt&lt&gt&lt&gt</p>
-          </div>
+            <br/>
+            <div class="titre"> Mes principales compétences</div>
+            <div id="listecomp">
 
 
 
-          
+
+                <!--
+
+
+                          <div>
+                            <h3>Boostrap</h3>
+                              <p> &lt&gt&lt&gt&lt&gt&lt&gt&lt&gt</p>
+                          </div>
+                           <div>
+                -->
+
+
+                <div>
+                    <h3>Developpement Web</h3>
+                    <div class="progressbar">
+                        <div id="ph">Languages</div>
+                    </div>
+                    <div class="progressbar">
+                        <div id="ph">WordPress</div>
+                    </div>
+                    <div class="progressbar">
+                        <div id="ph">Git</div>
+                    </div>
+                    </br>
+                    <a class="details" href="#details_web">Détails</a>
+                </div>
+
+                <div>
+                    <h3>Services sur réseau</h3>
+                    <div class="progressbar">
+                        <div id="reseau"></div>
+                    </div>
+                    </br>
+                    <a class="details" href="#details_reseau">Détails</a>
+                </div>
+
+                <div>
+                    <h3>Infographie</h3>
+                    <div class="progressbar">
+                        <div id="ph">Logiciels</div>
+                    </div>
+                    </br>
+                    <a class="details" href="#details_infographie">Détails</a>
+                </div>
+
+
+
+                <div>
+                    <h3>Audiovisuel</h3>
+                    <div class="progressbar">
+                        <div id="ph">Logiciels</div>
+                    </div>
+                    <div class="progressbar">
+                        <div id="ph">Prise de son</div>
+                    </div>
+                    </br>
+                    <a class="details" href="#details_audiovisuel">Détails</a>
+                </div>
+
+
+
+
+
+
+            </div>
+        </div>
+
 <!--
-          <div>
-					  <h3>Photoshop</h3>
-					    <div class="progressbar">
-   					    <div id="ph"></div>
-					    </div>
-          </div>
-          <div>
-            <h3>Illustrator</h3>
-              <div class="progressbar">
-                <div id="il"></div>
-              </div>
-          </div>
-          <div>
-				    <h3>Audition</h3>
-					   <div class="progressbar">
-   						<div id="au"></div>
-					   </div>
-          </div>
-          <div>
-					  <h3>Premiere Pro</h3>
-					  <div class="progressbar">
-   						<div id="pp"></div>
-					  </div>
-          </div>
-          <div>
-				    <h3>Photoshop</h3>
-					  <div class="progressbar">
-   				 		<div id=""></div>
-					  </div>
-          </div>
-          <div>
-            <h3>Git</h3>
-              <h4><i>Portfolio déployé avec GitHub</i></h4>
-              <div class="progressbar">
-                <div id="il"></div>
-              </div>
-          </div>
-          <div>
-            <h3>Character Animator</h3>
-              <div class="progressbar">
-                <div id="ch"></div>
-              </div>
-          </div>
--->
-
-		    </div>
-
-
         <div id="grid-competences">
 
            <div>
@@ -215,20 +164,7 @@ include 'articles.php';
                 <li>Prise de son</li>
               </ul></p>
           </div>
-
-           <div>
-            <h3>&lt&gt Web &lt&gt</h3>
-              <p><ul>
-                <li>HTML / CSS</li>
-                <li>JavaScript</li>
-                <li>Php</li>
-              </ul></p>
-          </div>
-          
-
-
-
-
+-->
 
         </div>
 
@@ -251,24 +187,20 @@ include 'articles.php';
 
 			<div id="articles">
 
+                <div class="portfolio Web" style="background-image:url(img/image_cosmopolitan.jpg)" alt="image projet Cosmopolitan">
+                    <a href="#cosmopolitan">
+                        <span class="articles-over"><p>Cosmopolitan</p><p>Reproduction de la page d'accueil du site Cosmopolitan en utiliant boostrap</p></p></br><p>Découvrir en cliquant</p></span>
+                    </a>
+                </div>
 
-					<div class="portfolio Web">
-						<a href="#projet01">
-            				<img src="img/image_cosmopolitan.jpg" alt="image projet Cosmopolitan">
-                     <span class="articles-over"><span><h4>Cosmopolitan</h4><p>Reproduction de ce site utiliant bosstrapeproduction de ce site utiliant bosstrapeproduction de ce site utiliant bosstrapeproduction de ce site utiliant bosstrapeproduction de ce site utiliant bosstrapeproduction de ce site utiliant bosstrap.</p><p>Découvrir en cliquant</p></span></span>
-          				</a>
-        			</div>
+                <div class="portfolio AudioVisuel" style="background-image:url(img/court_metrage.png)" alt="image court-metrage">
+                    <a href="#court-metrage">
+                        <span class="articles-over"><span><p>Court Métrage <i>"Annonce"</i></p></br><p>Découvrir en cliquant</p></span></span>
+                    </a>
+                </div>
 
-        			<div class="portfolio AudioVisuel">
-          				<a href="#court-metrage">
-            				<img src="img/court_metrage.png" alt="image court-metrage">
-                    <span class="articles-over"><span><p>Court Métrage <i>"Annonce"</i></p></br><p>Découvrir en cliquant</p></span></span>
-          				</a>
-        			</div>
-
-        			<div class="portfolio Web">
+        			<div class="portfolio Web" style="background-image:url(img/facebook.png)" alt="image mini projet facebook">
           				<a href="#projet03">
-            				<img src="img/image1.jpg" alt="image mini projet facebook">
                     <span class="articles-over"><span><p>Mini projet Facebook</p></br><p>Découvrir en cliquant</p></span></span>
           				</a>
         			</div>
@@ -298,10 +230,6 @@ include 'articles.php';
 			étudiant <br />à l'université d'Artois à Lens, en DUT MMI.</p>
 
 			</div>
-			<br />	
-
-
-			<br> <div id="linkedin"> <a href="https://www.linkedin.com/in/antoine-vanderbrecht-642abb162/" target="_blank"> <img src="img/linkedin.png" alt="Image Profil Linkedin" height="auto" width="3%"> </a> <br> Découvrez mon profil <b><a href="https://www.linkedin.com/in/antoine-vanderbrecht-642abb162/" target="_blank">Linkedin</a></b> </div>
 
 
 		</div>
@@ -339,7 +267,9 @@ include 'articles.php';
 
 
 <div id="footer">
-	<div id="copy">© 2018 - Antoine VANDERBRECHT - Tous droits réservés </div>
+    <a href="https://github.com/MrAntoine" target="_blank"><img src="img/github.png" alt="logo github"></a>
+    <a href="https://www.linkedin.com/in/antoine-vanderbrecht/" target="_blank"><img src="img/linkedin.png" alt="logo linkedin"></a>
+    <div id="copy">© 2018 - Antoine VANDERBRECHT - Tous droits réservés </div>
 </div>
 
 
