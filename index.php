@@ -92,6 +92,20 @@ include 'articles.php';
                     <a class="details" href="#details_web">Détails</a>
                 </div>
 
+
+                <div>
+                    <h3>Audiovisuel</h3>
+                    <div class="progressbar">
+                        <div id="logiaud">Logiciels</div>
+                    </div>
+                    <div class="progressbar">
+                        <div id="priseson">Prise de son</div>
+                    </div>
+                    </br>
+                    <a class="details" href="#details_audiovisuel">Détails</a>
+                </div>
+
+
                 <div>
                     <h3>Services sur réseau</h3>
                     <div class="progressbar">
@@ -111,18 +125,6 @@ include 'articles.php';
                 </div>
 
 
-
-                <div>
-                    <h3>Audiovisuel</h3>
-                    <div class="progressbar">
-                        <div id="logiaud">Logiciels</div>
-                    </div>
-                    <div class="progressbar">
-                        <div id="priseson">Prise de son</div>
-                    </div>
-                    </br>
-                    <a class="details" href="#details_audiovisuel">Détails</a>
-                </div>
 
 
 
@@ -189,19 +191,19 @@ include 'articles.php';
 
                 <div class="portfolio Web" style="background-image:url(img/image_cosmopolitan.jpg)" alt="image projet Cosmopolitan">
                     <a href="#cosmopolitan">
-                        <span class="articles-over"><p>Cosmopolitan</p><p>Reproduction de la page d'accueil du site Cosmopolitan en utiliant boostrap</p></p></br><p>En savoir plus</p></span>
+                        <span class="articles-over"><p>Cosmopolitan</p><p>Reproduction de la page d'accueil du site Cosmopolitan avec le sytème boostrap</p></p></br><p>En savoir plus</p></span>
                     </a>
                 </div>
 
                 <div class="portfolio AudioVisuel" style="background-image: url(img/court_metrage.png); background-size: contain; background-color: white; background-repeat: no-repeat;" alt="image court-metrage">
                     <a href="#court-metrage">
-                        <span class="articles-over"><span><p>Court Métrage <i>"Annonce"</i></p></br><p>En savoir plus</p></span></span>
+                        <span class="articles-over"><span><p>Court Métrage <i>"Annonce"</i></p><p>Un court-métrage réalisé dans le cadre universitaire, ayant pour thème l'hôpital</p></br><p>En savoir plus</p></span></span>
                     </a>
                 </div>
 
         			<div class="portfolio Web" style="background-image:url(img/facebook.png)" alt="image mini projet facebook">
           				<a href="#mini_facebook">
-                    <span class="articles-over"><span><p>Mini projet Facebook</p></br><p>En savoir plus</p></span></span>
+                    <span class="articles-over"><span><p>Mini projet Facebook</p><p>Projet universitaire dans le domaine du web, ayant pour but de créer un réseau social, avec ses fonctions de bases</p></br><p>En savoir plus</p></span></span>
           				</a>
         			</div>
 
@@ -214,7 +216,7 @@ include 'articles.php';
 
                 <div class="portfolio AudioVisuel" style="background-image:url(img/mattepainting_amsterdam.jpg)" alt="image mattepainting Amsterdam">
                     <a href="#mattepainting_amsterdam">
-                        <span class="articles-over"><span><p>Mattepainting Amsterdam</p><p>Réalisation d'un mattepainting réaliste, lors d'un travail universitaire.</p>
+                        <span class="articles-over"><span><p>Mattepainting Amsterdam</p><p>Réalisation d'un Mattepainting réaliste, lors d'un travail universitaire.</p>
                                 </br><p>En savoir plus</p></span></span>
                     </a>
                 </div>

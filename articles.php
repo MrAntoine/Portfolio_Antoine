@@ -44,24 +44,21 @@
                       </div>
                     </div>
                     <div class="container">
-                        <img src="img/court_metrage.png">
+                        <div class="slider">
+                            <figure style="animation: 20s slidy3 infinite;">
+                                <img src="img/court_metrage.png" alt="image logo bande annonce le film">
+                                <img src="img/antoine_perche2.jpg" alt="image antoine perchman">
+                                <img src="img/a_venir.png" alt="image affiche film">
+                            </figure>
+                        </div>
+
                       <p>Lors de ma deuxième année de dut MMI, j'ai du réaliser un court-métrage avec 6 de mes collègues.</p>
                       <p>Pour réaliser ce court-métrage, différentes étapes ont étaient nécessaires :
-                        Avant la production : <ul>
-                          <li>L'écriture du synopsis</li>
-                          <li>L'écriture du scénario</li>
-                          <li>Castings</li>
-                          <li>Découpage technique</li>
+                        <ul>
+                          <li>Elaboration du synopsis et du scénario</li>
                           <li>Organisation / planning</li>
                           <li>Relations acteurs</li>
-                        </ul>
-                        <ul>Lors du tourngae :
                           <li>Prise de son</li>
-                          <li>Régie</li>
-                          <li>Castings</li>
-                          <li>Relations acteurs</li>
-                        </ul>
-                         <ul>Lors de la post production :
                           <li>Montage son</li>
                           <li>Création du site web (communication du court-métrage) <a target="_blank" href="https://www.labandeannoncelefilm.fr">Disponible ici</a></li>
                         </ul>
@@ -255,7 +252,7 @@
                 </div>
             </div>
             <div class="container">
-                <img src="img/court_metrage.png">
+                <img src="img/serveur_reseau.jpg">
                 <p>
                     <ul>
                     <li>Installation d'un serveur asterisk et des cleints VoIP (client linux et téléphone).
@@ -303,7 +300,7 @@
                         <div id="php">Php / Mysql</div>
                     </div>
                     <div class="progressbar2">
-                        <div id="ph">jQuery</div>
+                        <div id="jq">jQuery</div>
                     </div>
                     <div class="progressbar2">
                         <div id="react">React</div>
@@ -338,7 +335,7 @@
                 </div>
             </div>
             <div class="container">
-                <img src="img/court_metrage.png">
+                <img src="img/a_venir.png">
                 <p></p>
                 <div>
                     <h3>Logiciels Infographiques</h3>
@@ -372,7 +369,14 @@
                 </div>
             </div>
             <div class="container">
-                <img src="img/court_metrage.png">
+                <div class="slider">
+                <figure style="animation: 20s slidy4 infinite;">
+                        <img src="img/caméra.jpg" alt="image caméra plateau">
+                        <img src="img/table_mixage.jpg" alt="image table mixage">
+                        <img src="img/cablage.jpg" alt="image cablage">
+                        <img src="img/plateau.jpg" alt="image plateau">
+                    </figure>
+                </div>
                 <p></p>
                 <div>
                     <h3>Logiciels</h3>
@@ -391,6 +395,14 @@
                     <div class="progressbar2">
                         <div id="cu">Cubase</div>
                     </div>
+
+                    <h3>Technique</h3>
+                    <ul>
+                        <li>Prise de son</li>
+                        <li>Cablage système de communication</li>
+                        <li>Mixage</li>
+                        <li>Gestion lumières</li>
+                    </ul>
 
                 </div>
 

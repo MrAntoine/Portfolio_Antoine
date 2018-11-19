@@ -420,7 +420,10 @@ a:visited {
     width: 78%;
 }
 .progressbar2 #js {
-    width: 68%;
+    width: 75%;
+}
+.progressbar2 #jq {
+    width: 64%;
 }
 .progressbar2 #php {
     width: 65%;
