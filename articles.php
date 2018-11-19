@@ -316,9 +316,9 @@
                     <div class="progressbar2">
                         <div id="wordpress">WordPress</div>
                     </div>
-                    <div class="progressbar2">
+                    <!--<div class="progressbar2">
                         <div id="phpbb">PhpBB</div>
-                    </div>
+                    </div>-->
 
                 </div>
 
