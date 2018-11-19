@@ -147,14 +147,13 @@
                 </div>
             </div>
             <div class="container">
-                <img src="img/mattepainting_amsterdam.jpg" alt="image mattepainting Amsterdam">
+                <img src="img/mattepainting_amsterdam_original.jpg" alt="image mattepainting Amsterdam photo origine">
                 <p>Lors d'un travail universitaire, j'ai du réaliser un mattepainting. Après un récent voyage à Amsterdam, j'ai donc décidé de recupérer des photos, et d'en faire un mattepainting</p>
                 <p>Le mattepainting, est un procédé qui laisse libre à la création. On peux y créer un monde imaginaire, ou détourner des photos tout en restant réaliste.</p>
                 <p>Mon mattepainting, lui, avait pour objectif d'être dans un registre réaliste. Mais je voulais ajouté à cela un aspect surréaliste par rapport au lieu.
-                <br/>Voici la photo d'origine.<br/></p>
-                <img src="img/mattepainting_amsterdam_original.jpg" alt="image mattepainting Amsterdam photo origine">
-
-
+                <br/>Jugeant le ciel trop irréaliste, j'ai préféré faire une seconde version avec un ciel qui est plus proche à celui de la réalité, et donc plus en accord avec la lumière du soleil sur les façades.<br/></p>
+                <img src="img/mattepainting_amsterdam2.jpg" alt="image mattepainting Amsterdam 2">
+                <img src="img/mattepainting_amsterdam.jpg" alt="image mattepainting Amsterdam">
             </div>
             <div class ="footermodal">
                 <div class="container">
@@ -286,7 +285,7 @@
                 </div>
             </div>
             <div class="container">
-                <img src="img/court_metrage.png">
+                <img src="img/a_venir.png">
                 <p></p>
                 <div>
                     <h3> Langages : </h3>
@@ -397,12 +396,18 @@
                     </div>
 
                     <h3>Technique</h3>
-                    <ul>
-                        <li>Prise de son</li>
-                        <li>Cablage système de communication</li>
-                        <li>Mixage</li>
-                        <li>Gestion lumières</li>
-                    </ul>
+                        <div class="progressbar2">
+                            <div id="priseson">Prise de son</div>
+                        </div>
+                    <div class="progressbar2">
+                        <div id="cable">Cablage communications</div>
+                    </div>
+                    <div class="progressbar2">
+                        <div id="mixage">Mixage</div>
+                    </div>
+
+
+
 
                 </div>
 

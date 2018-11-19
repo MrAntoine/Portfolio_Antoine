@@ -395,8 +395,17 @@ a:visited {
 .progressbar #priseson {
     width: 83%;
 }
+.progressbar2 #priseson {
+    width: 83%;
+}
 .progressbar2 #il {
     width: 50%;
+}
+.progressbar2 #cable {
+    width: 65%;
+}
+.progressbar2 #mixage {
+    width: 72%;
 }
 .progressbar2 #au {
     width: 76%;
