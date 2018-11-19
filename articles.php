@@ -218,9 +218,6 @@
           </div>
 
 
-
-
-
   <div id="messagesucces" class="modal">
               <div class="modal-dialog">
                 <div class="modal-content">
