@@ -210,6 +210,7 @@ a:visited {
     display: block;
     position: relative;
     /*height: max-content;*/
+    border: 3px solid rgba(100,164,191,0.7);
     background-size: cover;
 }
 
@@ -376,23 +377,68 @@ a:visited {
     position:relative;
 }
 
-.progressbar #ph {
-    width: 76%; 
+.progressbar2 #ph {
+    width: 78%;
 }
-.progressbar #il {
-    width: 55%; 
+.progressbar #git {
+    width: 58%;
 }
-.progressbar #au {
-    width: 75%; 
+.progressbar #langagesw {
+    width: 65%;
 }
-.progressbar #pp {
-    width: 65%; 
+.progressbar #logiinf {
+    width: 63%;
 }
-.progressbar #ch {
-    width: 45%; 
+.progressbar #logiaud {
+    width: 70%;
+}
+.progressbar #priseson {
+    width: 83%;
+}
+.progressbar2 #il {
+    width: 50%;
+}
+.progressbar2 #au {
+    width: 76%;
+}
+.progressbar2 #pp {
+    width: 45%;
+}
+.progressbar2 #ch {
+    width: 55%;
+}
+.progressbar2 #cu {
+    width: 70%;
+}
+.progressbar2 #in {
+    width: 63%;
 }
 .progressbar #reseau {
-    width: 45%;
+    width: 65%;
+}
+.progressbar2 #htmlcss {
+    width: 78%;
+}
+.progressbar2 #js {
+    width: 68%;
+}
+.progressbar2 #php {
+    width: 65%;
+}
+.progressbar2 #react {
+    width: 40%;
+}
+.progressbar2 #java {
+    width: 40%;
+}
+.progressbar2 #wordpress {
+    width: 95%;
+}
+.progressbar #wordpress {
+    width: 95%;
+}
+.progressbar2 #phpbb {
+    width: 85%;
 }
 
 #listecomp .details {

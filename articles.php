@@ -123,13 +123,7 @@
                 </div>
             </div>
             <div class="container">
-                <div class="slider">
-                    <figure style="animation: 30s slidy2 infinite;">
-                        <img src="img/logo_marathon_web_2018.png" alt="image logo marathon du web 2018 V1">
-                        <img src="img/logo_marathon_web_2018.png" alt="image logo marathon du web 2018 V1">
-                    </figure>
-                </div>
-
+                <img src="img/Logo_marathon_du_web_2018.png" alt="image logo marathon du web 2018 V1">
                 <p>En vue du marathon du web, une épreuve universitaire. J'ai réalisé ce logo pour cet évenement, de l'année 2018.</p>
                 <p>Pour ce logo, j'ai joué avec les mots. Comme le marathon du web est un évenement dans le domaine du developpement web,
                     j'ai eu l'idée d'intégrer des lignes de codes dans le filé d'un coureur.
@@ -139,6 +133,35 @@
             <div class ="footermodal">
                 <div class="container">
                     <p>Projet Perso : Infographie</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div id="mattepainting_amsterdam" class="modal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="headermodal">
+                <div class="container">
+                    <a href="#portfolio" class="closebtn">×</a>
+                    <h2>Mattepainting Amsterdam</h2>
+                </div>
+            </div>
+            <div class="container">
+                <img src="img/mattepainting_amsterdam.jpg" alt="image mattepainting Amsterdam">
+                <p>Lors d'un travail universitaire, j'ai du réaliser un mattepainting. Après un récent voyage à Amsterdam, j'ai donc décidé de recupérer des photos, et d'en faire un mattepainting</p>
+                <p>Le mattepainting, est un procédé qui laisse libre à la création. On peux y créer un monde imaginaire, ou détourner des photos tout en restant réaliste.</p>
+                <p>Mon mattepainting, lui, avait pour objectif d'être dans un registre réaliste. Mais je voulais ajouté à cela un aspect surréaliste par rapport au lieu.
+                <br/>Voici la photo d'origine.<br/></p>
+                <img src="img/mattepainting_amsterdam_original.jpg" alt="image mattepainting Amsterdam photo origine">
+
+
+            </div>
+            <div class ="footermodal">
+                <div class="container">
+                    <p>AudioVisuel : Infographie</p>
                 </div>
             </div>
         </div>
@@ -271,30 +294,30 @@
                 <div>
                     <h3> Langages : </h3>
                     <div class="progressbar2">
-                        <div id="ph">HTML / CSS</div>
+                        <div id="htmlcss">HTML / CSS</div>
                     </div>
                     <div class="progressbar2">
-                        <div id="ph">JavaScript</div>
+                        <div id="js">JavaScript</div>
                     </div>
                     <div class="progressbar2">
-                        <div id="ph">Php / Mysql</div>
+                        <div id="php">Php / Mysql</div>
                     </div>
                     <div class="progressbar2">
                         <div id="ph">jQuery</div>
                     </div>
                     <div class="progressbar2">
-                        <div id="ph">React</div>
+                        <div id="react">React</div>
                     </div>
                     <div class="progressbar2">
-                        <div id="ph">Java</div>
+                        <div id="java">Java</div>
                     </div>
 
                     <h3> CMS : </h3>
                     <div class="progressbar2">
-                        <div id="ph">WordPress</div>
+                        <div id="wordpress">WordPress</div>
                     </div>
                     <div class="progressbar2">
-                        <div id="ph">PhpBB</div>
+                        <div id="phpbb">PhpBB</div>
                     </div>
 
                 </div>
