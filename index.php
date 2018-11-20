@@ -44,7 +44,7 @@ include 'articles.php';
 	<br />
 		<div id="accueil">
 			<div id="banniereapropos"></div> <br />
-			<a class="bouton_bannere" id="boutongauche" href="doc/cv_antoine_vanderbrecht.pdf" target="_blank" >Télécharger mon CV</a>
+			<a class="bouton_bannere" id="boutongauche" href="doc/cv_antoine_vanderbrecht.pdf" target="_blank" download >Télécharger mon CV</a>
       <img id="logo-banner" src="img/Logo.png" alt="Logo du site web" width="200">
 			<a class="bouton_bannere" id="boutondroite" href="" target="_blank" >Book à venir</a>
 

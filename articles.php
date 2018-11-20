@@ -18,6 +18,7 @@
                                             <img src="img/image_cosmopolitan.jpg" alt="image cosmo">
                                         </figure>
                                     </div>
+
         							<p>Afin de nous familiariser avec Boostrap, lors d'un travail universitaire, nous avons du reproduire le site internet Cosmopolitan sur un plan ésthétique.</p>
         							<p><br/><ul>Compétences visées :
                         <li>Utilisation du système boostrap</li>
@@ -121,7 +122,7 @@
             </div>
             <div class="container">
                 <img src="img/Logo_marathon_du_web_2018.png" alt="image logo marathon du web 2018 V1">
-                <p>En vue du marathon du web, une épreuve universitaire. J'ai réalisé ce logo pour cet évenement, de l'année 2018.</p>
+                <p><br/>En vue du marathon du web, une épreuve universitaire. J'ai réalisé ce logo pour cet évenement, de l'année 2018.</p>
                 <p>Pour ce logo, j'ai joué avec les mots. Comme le marathon du web est un évenement dans le domaine du developpement web,
                     j'ai eu l'idée d'intégrer des lignes de codes dans le filé d'un coureur.
                     Sans doute un marathonien ;) </p>
@@ -249,6 +250,8 @@
             </div>
             <div class="container">
                 <img src="img/serveur_reseau.jpg">
+                <br/>
+                <br/>
                 <p>
                     <ul>
                     <li>Installation d'un serveur asterisk et des cleints VoIP (client linux et téléphone).
@@ -287,28 +290,28 @@
                 <div>
                     <h3> Langages : </h3>
                     <div class="progressbar2">
-                        <div id="htmlcss">HTML / CSS</div>
-                    </div>
+                        <div id="htmlcss"></div>
+                    </div><p>HTML / CSS</p>
                     <div class="progressbar2">
-                        <div id="js">JavaScript</div>
-                    </div>
+                        <div id="js"></div>
+                    </div><p>JavaScript</p>
                     <div class="progressbar2">
-                        <div id="php">Php / Mysql</div>
-                    </div>
+                        <div id="php"></div>
+                    </div><p>Php / Mysql</p>
                     <div class="progressbar2">
-                        <div id="jq">jQuery</div>
-                    </div>
+                        <div id="jq"></div>
+                    </div><p>jQuery</p>
                     <div class="progressbar2">
-                        <div id="react">React</div>
-                    </div>
+                        <div id="react"></div>
+                    </div><p>React</p>
                     <div class="progressbar2">
-                        <div id="java">Java</div>
-                    </div>
+                        <div id="java"></div>
+                    </div><p>Java</p>
 
                     <h3> CMS : </h3>
                     <div class="progressbar2">
-                        <div id="wordpress">WordPress</div>
-                    </div>
+                        <div id="wordpress"></div>
+                    </div><p>WordPress</p>
                     <!--<div class="progressbar2">
                         <div id="phpbb">PhpBB</div>
                     </div>-->
@@ -336,16 +339,16 @@
                 <div>
                     <h3>Logiciels Infographiques</h3>
                     <div class="progressbar2">
-                        <div id="ph">Photoshop</div>
-                    </div>
+                        <div id="ph"></div>
+                    </div><p>Photoshop</p>
 
                     <div class="progressbar2">
-                        <div id="il">Illustrator</div>
-                    </div>
+                        <div id="il"></div>
+                    </div><p>Illustrator</p>
 
                     <div class="progressbar2">
-                        <div id="in">Indesign</div>
-                    </div>
+                        <div id="in"></div>
+                    </div><p>Indesign</p>
 
                 </div>
 
@@ -377,31 +380,31 @@
                 <div>
                     <h3>Logiciels</h3>
                     <div class="progressbar2">
-                        <div id="au">Audition</div>
-                    </div>
+                        <div id="au"></div>
+                    </div><p>Audition</p>
 
                     <div class="progressbar2">
-                        <div id="pp">PremierePro</div>
-                    </div>
+                        <div id="pp"></div>
+                    </div><p>PremierePro</p>
 
                     <div class="progressbar2">
-                        <div id="ch">Character Animator</div>
-                    </div>
+                        <div id="ch"></div>
+                    </div><p>Character Animator</p>
 
                     <div class="progressbar2">
-                        <div id="cu">Cubase</div>
-                    </div>
+                        <div id="cu"></div>
+                    </div><p>Cubase</p>
 
                     <h3>Technique</h3>
                         <div class="progressbar2">
-                            <div id="priseson">Prise de son</div>
-                        </div>
+                            <div id="priseson"></div>
+                        </div><p>Prise de son</p>
                     <div class="progressbar2">
-                        <div id="cable">Cablage communications</div>
-                    </div>
+                        <div id="cable"></div>
+                    </div><p>Cablage communications</p>
                     <div class="progressbar2">
-                        <div id="mixage">Mixage</div>
-                    </div>
+                        <div id="mixage"></div>
+                    </div><p>Mixage</p>
 
 
 
