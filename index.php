@@ -68,7 +68,6 @@ include 'articles.php';
 
                 <!--
 
-
                           <div>
                             <h3>Boostrap</h3>
                               <p> &lt&gt&lt&gt&lt&gt&lt&gt&lt&gt</p>
