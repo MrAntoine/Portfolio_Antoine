@@ -65,7 +65,6 @@ if( isset($_POST['email']) && isset($_POST['nom']) && isset($_POST['prenom']) &&
 
 
 
-
 // On vérifie que le champ email est bien un email:
 	$regex = '/^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})$/'; 
 		if (!preg_match($regex, $_POST['email'])){
