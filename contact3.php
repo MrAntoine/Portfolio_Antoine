@@ -37,17 +37,25 @@ require 'vendor/autoload.php';
 
 
 // Si tous les champs sont remplis
-if( isset($_POST['email']) && isset($_POST['nom']) && isset($_POST['prenom']) && isset($_POST['sujet']) && isset($_POST['message']) && isset($_POST['g-recaptcha-response']) ){
+if( isset($_POST['email']) && isset($_POST['nom']) && isset($_POST['prenom']) && isset($_POST['sujet']) && isset($_POST['message']) ){
 
 
     if(isset($_POST['g-recaptcha-response']) && !empty($_POST['g-recaptcha-response'])){
         //your site secret key
-        $secret = '6LevT3wUAAAAAAutt2FheqFx222XZeyhCYPWzC4r';
+        $secret = '6LevT3wUAAAAAF5swzP29OD8q2JnZeYOIzeyHg2C';
+        $response = $_POST['g-recaptcha-response'];
+        $urlverif = file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=$secret&responde=$response");
+        $result = json_decode($urlverif, TRUE);
+        if($result['succes] == 1']){
+
+        }
+        print_r($urlverif);
+/*
         //get verify response data
         $verifyResponse = file_get_contents('https://www.google.com/recaptcha/api/siteverify?secret='.$secret.'&response='.$_POST['g-recaptcha-response']);
         $responseData = json_decode($verifyResponse);
         if($responseData->success){
-
+*/
         }else{
             $erreurs = $erreurs +1;
         }
