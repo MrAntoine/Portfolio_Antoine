@@ -39,7 +39,7 @@ require 'vendor/autoload.php';
 // Si tous les champs sont remplis
 if( isset($_POST['email']) && isset($_POST['nom']) && isset($_POST['prenom']) && isset($_POST['sujet']) && isset($_POST['message']) ){
 
-
+/*
     if(isset($_POST['g-recaptcha-response']) && !empty($_POST['g-recaptcha-response'])){
         //your site secret key
         $secret = '6LevT3wUAAAAAF5swzP29OD8q2JnZeYOIzeyHg2C';
@@ -49,15 +49,25 @@ if( isset($_POST['email']) && isset($_POST['nom']) && isset($_POST['prenom']) &&
         if($result['succes] == 1']){
             $erreurs = $erreurs;
         }
-/*
-        //get verify response data
-        $verifyResponse = file_get_contents('https://www.google.com/recaptcha/api/siteverify?secret='.$secret.'&response='.$_POST['g-recaptcha-response']);
-        $responseData = json_decode($verifyResponse);
-        if($responseData->success){
-*/
         }else{
             $erreurs = $erreurs +1;
         }
+    }
+    */
+      if(isset($_POST['g-recaptcha-response']) && !empty($_POST['g-recaptcha-response'])) {
+        //your site secret key
+        $secret = '6LevT3wUAAAAAF5swzP29OD8q2JnZeYOIzeyHg2C';
+        //get verify response data
+        $verifyResponse = file_get_contents('https://www.google.com/recaptcha/api/siteverify?secret='.$secret.'&response='.$_POST['g-recaptcha-response']);
+        $responseData = json_decode($verifyResponse);
+        if($responseData->success):
+
+             print_r("Working Fine"); exit;
+        else:
+             print_r("No valid Key"); exit;
+        endif;
+    } else {
+        print_r("Not Working Captcha"); exit;
     }
 
 
