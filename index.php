@@ -15,6 +15,7 @@ include 'articles.php';
 	<script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.js"></script>
 	<script type="text/javascript" src="script.js"></script>
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+    <script src='https://www.google.com/recaptcha/api.js'></script>
 </head>
 
 <body>
@@ -271,6 +272,7 @@ include 'articles.php';
    				<textarea name="message" cols="60" rows="10" placeholder="Ecrivez votre message" required></textarea>
    				<br/>
    				<!--<p>Combien font 1+3 ?: <input type="text" name="captcha" placeholder="Répondre au captcha 1+3 ?" class="form_info" required/> </p>-->
+                <input name="captcha" class="g-recaptcha" data-sitekey="6LevT3wUAAAAAAutt2FheqFx222XZeyhCYPWzC4r" required>
    				<input type="submit" value="Envoyer" class="btn" name="envoi" id="envoyer">
 			</form>
 		</div>
