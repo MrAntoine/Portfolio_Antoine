@@ -546,6 +546,10 @@ form textarea {
     width:51%;
 }
 
+.g-recaptcha {
+    transform: translateX(37%);
+}
+
 .form_info {
   	width: 15em;
     height: 5em;
@@ -916,6 +920,10 @@ div.slider figure {
         padding-left: 5px;
         margin-bottom: 15px;
         width: 100%;
+    }
+
+    .g-recaptcha {
+        transform: translateX(0%);
     }
 
 
