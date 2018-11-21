@@ -61,13 +61,12 @@ if( isset($_POST['email']) && isset($_POST['nom']) && isset($_POST['prenom']) &&
         $verifyResponse = file_get_contents('https://www.google.com/recaptcha/api/siteverify?secret='.$secret.'&response='.$_POST['g-recaptcha-response']);
         $responseData = json_decode($verifyResponse);
         if($responseData->success):
-
-             print_r("Working Fine"); exit;
+            $erreurs = $erreurs;
         else:
-             print_r("No valid Key"); exit;
+            $erreurs = $erreurs +1;
         endif;
     } else {
-        print_r("Not Working Captcha"); exit;
+        $erreurs = $erreurs +1;
     }
 
 
