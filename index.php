@@ -272,7 +272,7 @@ include 'articles.php';
    				<textarea name="message" cols="60" rows="10" placeholder="Ecrivez votre message" required></textarea>
    				<br/>
    				<!--<p>Combien font 1+3 ?: <input type="text" name="captcha" placeholder="Répondre au captcha 1+3 ?" class="form_info" required/> </p>-->
-                <input name="captcha" class="g-recaptcha" data-sitekey="6LevT3wUAAAAAAutt2FheqFx222XZeyhCYPWzC4r" required>
+                <div name="captcha" class="g-recaptcha" data-sitekey="6LevT3wUAAAAAAutt2FheqFx222XZeyhCYPWzC4r" required></div>
    				<input type="submit" value="Envoyer" class="btn" name="envoi" id="envoyer">
 			</form>
 		</div>
