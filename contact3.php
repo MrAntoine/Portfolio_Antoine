@@ -47,9 +47,8 @@ if( isset($_POST['email']) && isset($_POST['nom']) && isset($_POST['prenom']) &&
         $urlverif = file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=$secret&responde=$response");
         $result = json_decode($urlverif, TRUE);
         if($result['succes] == 1']){
-
+            $erreurs = $erreurs;
         }
-        print_r($urlverif);
 /*
         //get verify response data
         $verifyResponse = file_get_contents('https://www.google.com/recaptcha/api/siteverify?secret='.$secret.'&response='.$_POST['g-recaptcha-response']);
