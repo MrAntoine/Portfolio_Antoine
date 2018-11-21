@@ -37,7 +37,7 @@ require 'vendor/autoload.php';
 
 
 // Si tous les champs sont remplis
-if( isset($_POST['email']) && isset($_POST['nom']) && isset($_POST['prenom']) && isset($_POST['sujet']) && isset($_POST['message']) ){
+if( isset($_POST['email']) && isset($_POST['nom']) && isset($_POST['prenom']) && isset($_POST['sujet']) && isset($_POST['message']) && isset($_POST['g-recaptcha-response']) ){
 
 
     if(isset($_POST['g-recaptcha-response']) && !empty($_POST['g-recaptcha-response'])){
